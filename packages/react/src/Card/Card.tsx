@@ -22,7 +22,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
         className={classNames(
           {
             "rounded-lg": !className.includes("rounded-"),
-            "st-bg-primary": !className.includes("bg-"),
+            "my-bg-primary": !className.includes("bg-"),
           },
           className
         )}

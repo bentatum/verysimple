@@ -1,5 +1,4 @@
 {
-  "private": false,
   "name": "@verysimple/react",
   "version": "1.0.0",
   "description": "A very simple component library",
