@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.1.1
+
+### Patch Changes
+
+- 28aa5e4: Change Card background to secondary
+
 ## 1.1.0
 
 ### Minor Changes
