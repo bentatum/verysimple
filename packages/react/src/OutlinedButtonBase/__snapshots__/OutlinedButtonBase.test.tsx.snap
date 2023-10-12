@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OutlinedButtonBase should have an outline 1`] = `
+<div>
+  <button
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center box-content shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 disabled:text-zinc-400 dark:disabled:text-zinc-500 uppercase tracking-widest whitespace-nowrap font-bold rounded-full text-base min-h-[48px] border st-border-primary hover:st-bg-gradient-dark-to-r hover:border-none hover:p-[1px] hover:text-white focus:st-bg-gradient-dark-to-r focus:border-none focus:p-[1px] focus:text-white"
+    tabindex="0"
+  >
+    Test
+  </button>
+</div>
+`;

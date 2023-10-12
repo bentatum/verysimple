@@ -10,10 +10,10 @@ export interface GradientBorderStylesOptions {
 
 export const gradientBorderStyles = ({
   borderSize = 1,
-  backgroundColor: bg = "var(--st-bg-primary)",
+  backgroundColor: bg = "var(--my-bg-primary)",
   direction: dir = "right",
-  startColor = "var(--st-gradient-start)",
-  stopColor = "var(--st-gradient-stop)",
+  startColor = "var(--my-gradient-start)",
+  stopColor = "var(--my-gradient-stop)",
 }: GradientBorderStylesOptions = {}) => ({
   background: `linear-gradient(${bg}, ${bg}) 0 0 / 100% 100% no-repeat, linear-gradient(to ${dir}, ${startColor} 0%, ${stopColor} 100%)`,
   backgroundClip: "content-box, border-box",

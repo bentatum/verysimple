@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GradientBorder borderSize 1 1`] = `
+<div>
+  <div
+    style="background-clip: content-box, border-box; padding: 1px;"
+  >
+    GM
+  </div>
+</div>
+`;
+
+exports[`GradientBorder borderSize 2 1`] = `
+<div>
+  <div
+    style="background-clip: content-box, border-box; padding: 2px;"
+  >
+    GM
+  </div>
+</div>
+`;
+
+exports[`GradientBorder borderSize 4 1`] = `
+<div>
+  <div
+    style="background-clip: content-box, border-box; padding: 4px;"
+  >
+    GM
+  </div>
+</div>
+`;
+
+exports[`GradientBorder borderSize 8 1`] = `
+<div>
+  <div
+    style="background-clip: content-box, border-box; padding: 8px;"
+  >
+    GM
+  </div>
+</div>
+`;
+
+exports[`GradientBorder should have a direction prop 1`] = `
+<div>
+  <div
+    style="background-clip: content-box, border-box; padding: 1px;"
+  >
+    GM
+  </div>
+</div>
+`;
+
+exports[`GradientBorder should have a gradient border 1`] = `
+<div>
+  <div
+    style="background-clip: content-box, border-box; padding: 1px;"
+  >
+    GM
+  </div>
+</div>
+`;
