@@ -1,0 +1,10 @@
+import { ButtonSize } from "@/types";
+import classNames from "classnames";
+
+export const iconButtonWidthClassNames = (size: ButtonSize) =>
+  classNames({
+    "min-w-[32px]": size === "xs",
+    "min-w-[38px]": size === "sm",
+    "min-w-[48px]": size === "md",
+    "min-w-[60px]": size === "lg",
+  });
