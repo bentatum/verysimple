@@ -20,7 +20,6 @@ export const buttonTextClassNames = (
       variant === "filled" &&
       !className.match(/disabled:text-/),
     uppercase: !className.match(/lowercase|capitalize|normal-case/),
-    "tracking-widest": !className.match(/tracking-/),
     "whitespace-nowrap": !className.match(/whitespace-/),
     "font-bold": !className.match(
       /font-[thin|extralight|light|normal|medium|semibold|extrabold|black]/
