@@ -29,12 +29,6 @@ describe("buttonTextClassNames", () => {
     expect(buttonTextClassNames("neutral", "text")).toContain("uppercase");
   });
 
-  it("should have tracking widest as a default", () => {
-    expect(
-      buttonTextClassNames("neutral", "text").includes("tracking-widest")
-    ).toBe(true);
-  });
-
   it("should be able to override tracking", () => {
     expect(
       buttonTextClassNames("neutral", "text", "tracking-normal").includes(

@@ -1,5 +1,17 @@
 # Change Log
 
+## 1.4.3
+
+### Patch Changes
+
+- fix: remove dark gradient classname
+
+## 1.4.2
+
+### Patch Changes
+
+- fix: remove wide tracking from button
+
 ## 1.4.1
 
 ### Patch Changes

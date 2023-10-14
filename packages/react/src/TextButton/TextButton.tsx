@@ -19,7 +19,7 @@ export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
         size={size}
         color={color}
         className={classNames(
-          "bg-clip-text my-bg-gradient-to-r hover:my-bg-gradient-dark-to-r active:my-bg-gradient-dark-to-r focus:my-bg-gradient-dark-to-r",
+          "bg-clip-text my-bg-gradient-to-r hover:my-bg-gradient-to-r active:my-bg-gradient-to-r focus:my-bg-gradient-to-r",
           "transition-colors duration-200 ease-in-out",
           buttonTextClassNames(color, "text", className),
           fieldPaddingClassNames(size, className),

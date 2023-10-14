@@ -71,9 +71,9 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
             border: color !== "primary",
             "my-border-primary": color === "neutral",
             "border-red-500 disabled:border-red-400": color === "destructive",
-            "hover:my-bg-gradient-dark-to-r hover:border-none hover:p-[1px] hover:text-white":
+            "hover:my-bg-gradient-to-r hover:border-none hover:p-[1px] hover:text-white":
               gradientBorderEligible,
-            "focus:my-bg-gradient-dark-to-r focus:border-none focus:p-[1px] focus:text-white":
+            "focus:my-bg-gradient-to-r focus:border-none focus:p-[1px] focus:text-white":
               gradientBorderEligible,
           },
           className
