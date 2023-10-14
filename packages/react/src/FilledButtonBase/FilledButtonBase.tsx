@@ -45,7 +45,7 @@ export const FilledButtonBase = forwardRef<
           {
             "my-bg-secondary hover:text-white focus:text-white active:text-white":
               color === "neutral",
-            "hover:my-bg-gradient-dark-to-r focus:my-bg-gradient-dark-to-r":
+            "hover:my-bg-gradient-to-r focus:my-bg-gradient-to-r":
               !disabled && ["neutral", "primary"].includes(color),
             "my-bg-gradient-to-r text-white": color === "primary" && !disabled,
             "bg-red-500 disabled:bg-red-400 disabled:text-white":
