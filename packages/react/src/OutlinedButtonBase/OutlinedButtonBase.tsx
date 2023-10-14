@@ -40,7 +40,7 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
             {...props}
             as={as}
             ref={ref}
-            borderColor={disabled ? "var(--st-border-disabled)" : undefined}
+            borderColor={disabled ? "var(--my-border-disabled)" : undefined}
             {...GradientBorderProps}
           />
         );
@@ -69,11 +69,11 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
           fieldSizeClassNames(size),
           {
             border: color !== "primary",
-            "st-border-primary": color === "neutral",
+            "my-border-primary": color === "neutral",
             "border-red-500 disabled:border-red-400": color === "destructive",
-            "hover:st-bg-gradient-dark-to-r hover:border-none hover:p-[1px] hover:text-white":
+            "hover:my-bg-gradient-dark-to-r hover:border-none hover:p-[1px] hover:text-white":
               gradientBorderEligible,
-            "focus:st-bg-gradient-dark-to-r focus:border-none focus:p-[1px] focus:text-white":
+            "focus:my-bg-gradient-dark-to-r focus:border-none focus:p-[1px] focus:text-white":
               gradientBorderEligible,
           },
           className

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OutlinedButtonBase can render as a custom component 1`] = `
+exports[`OutlinedButton can render as a custom component 1`] = `
 <div>
   <div
     data-testid="custom-component"
@@ -8,7 +8,7 @@ exports[`OutlinedButtonBase can render as a custom component 1`] = `
 </div>
 `;
 
-exports[`OutlinedButtonBase can render as a custom component when primary 1`] = `
+exports[`OutlinedButton can render as a custom component when primary 1`] = `
 <div>
   <div
     data-testid="custom-component"
@@ -16,7 +16,7 @@ exports[`OutlinedButtonBase can render as a custom component when primary 1`] = 
 </div>
 `;
 
-exports[`OutlinedButtonBase can render as a custom component when primary and disabled 1`] = `
+exports[`OutlinedButton can render as a custom component when primary and disabled 1`] = `
 <div>
   <div
     data-testid="custom-component"
@@ -24,13 +24,17 @@ exports[`OutlinedButtonBase can render as a custom component when primary and di
 </div>
 `;
 
-exports[`OutlinedButtonBase should have an outline 1`] = `
+exports[`OutlinedButton should have an outline 1`] = `
 <div>
   <button
     class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center box-content shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 disabled:text-zinc-400 dark:disabled:text-zinc-500 uppercase tracking-widest whitespace-nowrap font-bold rounded-full text-base min-h-[48px] border my-border-primary hover:my-bg-gradient-dark-to-r hover:border-none hover:p-[1px] hover:text-white focus:my-bg-gradient-dark-to-r focus:border-none focus:p-[1px] focus:text-white"
     tabindex="0"
   >
-    Test
+    <span
+      class="px-5 w-full flex items-center justify-center"
+    >
+      Test
+    </span>
   </button>
 </div>
 `;
