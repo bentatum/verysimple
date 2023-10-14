@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should have a gradient border on focus 1`] = `
+<div>
+  <div
+    class="inline-flex items-center overflow-hidden rounded-2xl transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
+    style="background-clip: content-box, border-box; padding: 1px;"
+  >
+    <div
+      class="w-full relative inline-flex items-center"
+    >
+      <input
+        class="text-base min-h-[48px] px-5 focus:outline-none appearance-none placeholder-zinc-400 disabled:bg-zinc-200 dark:disabled:bg-zinc-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-zinc-300 text-black rounded-[15px]"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input should not have a gradient border if disable focus style is true 1`] = `
+<div>
+  <div
+    class="inline-flex items-center overflow-hidden rounded-2xl border my-border-primary transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
+  >
+    <div
+      class="w-full relative inline-flex items-center"
+    >
+      <input
+        class="text-base min-h-[48px] px-5 focus:outline-none appearance-none placeholder-zinc-400 disabled:bg-zinc-200 dark:disabled:bg-zinc-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-zinc-300 text-black rounded-[15px]"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input should not have a gradient border if disable focus style is true 2`] = `
+<div>
+  <div
+    class="inline-flex items-center overflow-hidden rounded-2xl border my-border-primary transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
+  >
+    <div
+      class="w-full relative inline-flex items-center"
+    >
+      <input
+        class="text-base min-h-[48px] px-5 focus:outline-none appearance-none placeholder-zinc-400 disabled:bg-zinc-200 dark:disabled:bg-zinc-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-zinc-300 text-black rounded-[15px]"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input should not have shadow classnames when disabled 1`] = `
+<div>
+  <div
+    class="inline-flex items-center overflow-hidden rounded-2xl border my-border-primary"
+  >
+    <div
+      class="w-full relative inline-flex items-center"
+    >
+      <input
+        class="text-base min-h-[48px] px-5 focus:outline-none appearance-none placeholder-zinc-400 disabled:bg-zinc-200 dark:disabled:bg-zinc-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-zinc-300 text-black rounded-[15px]"
+        disabled=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input should render 1`] = `
+<div>
+  <div
+    class="inline-flex items-center overflow-hidden rounded-2xl border my-border-primary transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
+  >
+    <div
+      class="w-full relative inline-flex items-center"
+    >
+      <input
+        class="text-base min-h-[48px] px-5 focus:outline-none appearance-none placeholder-zinc-400 disabled:bg-zinc-200 dark:disabled:bg-zinc-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-zinc-300 text-black rounded-[15px]"
+      />
+    </div>
+  </div>
+</div>
+`;
