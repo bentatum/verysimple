@@ -19,7 +19,6 @@ export const buttonTextClassNames = (
       color === "destructive" &&
       variant === "filled" &&
       !className.match(/disabled:text-/),
-    uppercase: !className.match(/lowercase|capitalize|normal-case/),
     "whitespace-nowrap": !className.match(/whitespace-/),
     "font-bold": !className.match(
       /font-[thin|extralight|light|normal|medium|semibold|extrabold|black]/
