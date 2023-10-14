@@ -43,7 +43,7 @@ export const FilledButtonBase = forwardRef<
           fieldSizeClassNames(size),
           fieldBorderRadiusClassNames(rounded, className),
           {
-            "my-bg-primary hover:text-white focus:text-white active:text-white":
+            "my-bg-secondary hover:text-white focus:text-white active:text-white":
               color === "neutral",
             "hover:my-bg-gradient-dark-to-r focus:my-bg-gradient-dark-to-r":
               !disabled && ["neutral", "primary"].includes(color),
