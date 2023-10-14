@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.4.0
+
+### Minor Changes
+
+- feat: button
+
 ## 1.3.0
 
 ### Minor Changes
