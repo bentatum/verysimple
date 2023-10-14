@@ -22,6 +22,7 @@ exports[`top level exports matches snapshot 1`] = `
   "shadowTransitionClassNames",
   "statusColorClassNames",
   "IconButton",
+  "Input",
   "NormalIconButton",
   "OutlinedButtonBase",
   "OutlinedIconButton",

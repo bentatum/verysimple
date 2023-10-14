@@ -6,6 +6,7 @@ export * from "./FilledIconButton";
 export * from "./GradientBorder";
 export * from "./helpers";
 export * from "./IconButton";
+export * from "./Input";
 export * from "./NormalIconButton";
 export * from "./OutlinedButtonBase";
 export * from "./OutlinedIconButton";
