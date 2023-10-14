@@ -1,5 +1,15 @@
 # Change Log
 
+## 1.2.0
+
+### Minor Changes
+
+- b2aaf03: input component
+
+### Patch Changes
+
+- 5d0cde0: fix: dangling lockfile
+
 ## 1.1.1
 
 ### Patch Changes
