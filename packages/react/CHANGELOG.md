@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.4.4
+
+### Patch Changes
+
+- fix: button normal case
+
 ## 1.4.3
 
 ### Patch Changes
