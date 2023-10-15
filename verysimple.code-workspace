@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "react",
+			"path": "packages/react"
+		}
+	],
+	"settings": {
+		"jest.disabledWorkspaceFolders": [
+			"verysimple",
+			"react"
+		]
+	}
+}

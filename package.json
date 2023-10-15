@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
-    "publish-packages": "turbo run build lint && changeset version && changeset publish"
+    "publish-packages": "turbo run test build lint && changeset version && changeset publish"
   },
   "devDependencies": {
     "eslint": "^8.48.0",

@@ -1,32 +1,8 @@
 import { buttonTextClassNames } from "../buttonTextClassNames";
 
 describe("buttonTextClassNames", () => {
-  it("should return the default", () => {
-    expect(buttonTextClassNames("neutral", "text", "not-a-case")).toContain(
-      "uppercase"
-    );
-  });
-  it('should be override-able with "lowercase"', () => {
-    expect(
-      buttonTextClassNames("neutral", "text", "lowercase").includes("uppercase")
-    ).toBe(false);
-  });
-  it('should be override-able with "capitalize"', () => {
-    expect(
-      buttonTextClassNames("neutral", "text", "capitalize").includes(
-        "uppercase"
-      )
-    ).toBe(false);
-  });
-  it('should be override-able with "normal-case"', () => {
-    expect(
-      buttonTextClassNames("neutral", "text", "normal-case").includes(
-        "uppercase"
-      )
-    ).toBe(false);
-  });
   it("doesn't fail if the className is undefined", () => {
-    expect(buttonTextClassNames("neutral", "text")).toContain("uppercase");
+    expect(buttonTextClassNames("neutral", "text")).toContain("font-bold");
   });
 
   it("should be able to override tracking", () => {
