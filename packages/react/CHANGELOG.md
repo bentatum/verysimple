@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.6.0
+
+### Minor Changes
+
+- feat: chip
+
 ## 1.5.1
 
 ### Patch Changes
