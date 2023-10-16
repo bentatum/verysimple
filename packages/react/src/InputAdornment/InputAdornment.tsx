@@ -23,10 +23,11 @@ export const InputAdornment: FC<InputAdornmentProps> = forwardRef<
         ref={ref}
         className={classNames(
           "absolute inset-y-0",
-          "flex items-center",
+          "flex",
           "font-medium whitespace-nowrap",
           fieldPaddingClassNames(inputSize, className),
           {
+            "items-center": !className.match(/items-/),
             "pointer-events-none": !className.match(/pointer-events-/),
             "text-zinc-500 dark:text-zinc-300": !className.match(/text-/),
             "rounded-l-xl -left-px": direction === "left",

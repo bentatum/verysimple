@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.5.0
+
+### Minor Changes
+
+- aa7b1e9: feat: input adornment
+
 ## 1.4.4
 
 ### Patch Changes
