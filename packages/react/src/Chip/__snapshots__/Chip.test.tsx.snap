@@ -2,7 +2,7 @@
 
 exports[`Chip snapshot 1`] = `
 <div
-  class="inline-flex items-center text-base min-h-[48px] px-4 font-semibold st-bg-primary rounded-full text-black dark:text-white"
+  class="inline-flex items-center text-base min-h-[48px] px-4 font-semibold my-bg-secondary rounded-full text-black dark:text-white"
 >
   test
 </div>
