@@ -31,7 +31,7 @@ exports[`OutlinedButton should have an outline 1`] = `
     tabindex="0"
   >
     <span
-      class="px-5 w-full flex items-center justify-center"
+      class="px-4 w-full flex items-center justify-center"
     >
       Test
     </span>
