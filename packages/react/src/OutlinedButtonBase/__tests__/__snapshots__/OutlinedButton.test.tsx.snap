@@ -27,7 +27,7 @@ exports[`OutlinedButtonBase can render as a custom component when primary and di
 exports[`OutlinedButtonBase should have an outline 1`] = `
 <div>
   <button
-    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center box-content shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 disabled:text-zinc-400 dark:disabled:text-zinc-500 uppercase whitespace-nowrap font-bold rounded-full text-base min-h-[48px] border my-border-primary hover:my-bg-gradient-to-r hover:border-none hover:p-[1px] hover:text-white focus:my-bg-gradient-to-r focus:border-none focus:p-[1px] focus:text-white"
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center box-content shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 disabled:text-zinc-400 dark:disabled:text-zinc-500 whitespace-nowrap font-bold rounded-full text-base min-h-[48px] border my-border-primary hover:my-bg-gradient-to-r hover:border-none hover:p-[1px] hover:text-white focus:my-bg-gradient-to-r focus:border-none focus:p-[1px] focus:text-white"
     tabindex="0"
   >
     Test

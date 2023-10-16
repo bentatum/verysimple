@@ -9,6 +9,7 @@ export * from "./GradientBorder";
 export * from "./helpers";
 export * from "./IconButton";
 export * from "./Input";
+export * from "./InputAdornment";
 export * from "./NormalIconButton";
 export * from "./OutlinedButton";
 export * from "./OutlinedButtonBase";

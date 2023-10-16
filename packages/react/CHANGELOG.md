@@ -1,5 +1,17 @@
 # Change Log
 
+## 1.5.1
+
+### Patch Changes
+
+- fix: make input adornment items-center override-able
+
+## 1.5.0
+
+### Minor Changes
+
+- aa7b1e9: feat: input adornment
+
 ## 1.4.4
 
 ### Patch Changes
