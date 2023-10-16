@@ -7,10 +7,10 @@ export const fieldPaddingClassNames = (
 ) => {
   return !className.match(/px-/)
     ? classNames({
-        "px-3": size === "xs",
-        "px-4": size === "sm",
-        "px-5": size === "md",
-        "px-6": size === "lg",
+        "px-2": size === "xs",
+        "px-3": size === "sm",
+        "px-4": size === "md",
+        "px-5": size === "lg",
       })
     : "";
 };

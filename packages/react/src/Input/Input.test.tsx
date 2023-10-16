@@ -41,12 +41,12 @@ describe("Input", () => {
   describe("defaults", () => {
     test("px", () => {
       render(<Input />);
-      expect(screen.getByRole("textbox")).toHaveClass("px-5");
+      expect(screen.getByRole("textbox")).toHaveClass("px-4");
     });
     test("px override", () => {
       render(<Input className="px-0 pl-10" />);
       expect(screen.getByRole("textbox")).toHaveClass("px-0");
-      expect(screen.getByRole("textbox")).not.toHaveClass("px-5");
+    expect(screen.getByRole("textbox")).not.toHaveClass("px-4");
     });
   });
 

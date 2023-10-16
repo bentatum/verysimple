@@ -3,7 +3,7 @@
 exports[`FilledButton should have a gradient background if primary and not disabled 1`] = `
 <div>
   <button
-    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center transition-colors duration-200 ease-in-out disabled:text-zinc-400 dark:disabled:text-zinc-500 whitespace-nowrap font-bold shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 text-base min-h-[48px] rounded-full hover:my-bg-gradient-to-r focus:my-bg-gradient-to-r my-bg-gradient-to-r text-white disabled:bg-zinc-300 dark:disabled:bg-zinc-900 px-5"
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center transition-colors duration-200 ease-in-out disabled:text-zinc-400 dark:disabled:text-zinc-500 whitespace-nowrap font-bold shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 text-base min-h-[48px] rounded-full hover:my-bg-gradient-to-r focus:my-bg-gradient-to-r my-bg-gradient-to-r text-white disabled:bg-zinc-300 dark:disabled:bg-zinc-900 px-4"
     tabindex="0"
   >
     test
@@ -14,7 +14,7 @@ exports[`FilledButton should have a gradient background if primary and not disab
 exports[`FilledButton should have a red background if destructive 1`] = `
 <div>
   <button
-    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center transition-colors duration-200 ease-in-out dark:disabled:text-zinc-800 whitespace-nowrap font-bold shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 text-base min-h-[48px] rounded-full bg-red-500 disabled:bg-red-400 disabled:text-white px-5 text-white"
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center transition-colors duration-200 ease-in-out dark:disabled:text-zinc-800 whitespace-nowrap font-bold shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 text-base min-h-[48px] rounded-full bg-red-500 disabled:bg-red-400 disabled:text-white px-4 text-white"
     tabindex="0"
   />
 </div>

@@ -1,6 +1,7 @@
 export * from "./Button";
 export * from "./ButtonBase";
 export * from "./Card";
+export * from "./Chip";
 export * from "./Dialog";
 export * from "./FilledButton";
 export * from "./FilledButtonBase";
