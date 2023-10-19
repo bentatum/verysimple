@@ -16,5 +16,6 @@ export * from "./OutlinedButton";
 export * from "./OutlinedButtonBase";
 export * from "./OutlinedIconButton";
 export * from "./Spinner";
+export * from "./SvgIcon";
 export * from "./TextButton";
 export * from "./types";
