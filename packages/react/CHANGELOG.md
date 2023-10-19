@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.7.0
+
+### Minor Changes
+
+- 18d94c2: feat: svg icon
+
 ## 1.6.1
 
 ### Patch Changes
