@@ -85,7 +85,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           "inline-flex items-center overflow-hidden",
           fieldBorderRadiusClassNames(rounded, containerClassname),
           {
-            "border my-border-primary": !hasFocus && !containerClassname.includes("border-"),
+            "border my-border": !hasFocus && !containerClassname.includes("border-"),
             "w-full": fullWidth,
             [shadowTransitionClassNames(className)]: !disabled,
             "shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none":
