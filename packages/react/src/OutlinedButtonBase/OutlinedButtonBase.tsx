@@ -69,7 +69,7 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
           fieldSizeClassNames(size),
           {
             border: color !== "primary",
-            "my-border-primary": color === "neutral",
+            "my-border": color === "neutral",
             "border-red-500 disabled:border-red-400": color === "destructive",
             "hover:my-bg-gradient-to-r hover:border-none hover:p-[1px] hover:text-white":
               gradientBorderEligible,
