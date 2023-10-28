@@ -1,5 +1,11 @@
 # Change Log
 
+## 2.0.0
+
+### Major Changes
+
+- 5c84115: feat: remote default rounded on all components
+
 ## 1.7.1
 
 ### Patch Changes
