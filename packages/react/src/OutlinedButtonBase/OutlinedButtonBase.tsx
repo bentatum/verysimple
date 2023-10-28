@@ -73,7 +73,6 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
               gradientBorderEligible,
             "focus:my-bg-gradient-to-r focus:border-none focus:p-[1px] focus:text-white":
               gradientBorderEligible,
-            "my-border-radius": !className.match(/rounded/),
           },
           className
         )}

@@ -8,12 +8,6 @@ describe("Card", () => {
     expect(container).toMatchSnapshot();
   });
   describe("default classnames", () => {
-    test("rounded", () => {
-      render(<Card as="button">Card</Card>);
-      expect(screen.getByRole("button", { name: "Card" })).toHaveClass(
-        "rounded-lg"
-      );
-    });
     test("background", () => {
       render(<Card as="button">Card</Card>);
       expect(screen.getByRole("button", { name: "Card" })).toHaveClass(
@@ -33,19 +27,6 @@ describe("Card", () => {
       );
       expect(screen.getByRole("button", { name: "Card" })).not.toHaveClass(
         "shadow"
-      );
-    });
-    test("rounded", () => {
-      render(
-        <Card as="button" className="rounded-sm">
-          Card
-        </Card>
-      );
-      expect(screen.getByRole("button", { name: "Card" })).toHaveClass(
-        "rounded-sm"
-      );
-      expect(screen.getByRole("button", { name: "Card" })).not.toHaveClass(
-        "rounded-lg"
       );
     });
     test("background", () => {

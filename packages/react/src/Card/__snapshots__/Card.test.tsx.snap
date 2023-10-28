@@ -3,7 +3,7 @@
 exports[`Card should render correctly 1`] = `
 <div>
   <div
-    class="rounded-lg my-bg-secondary"
+    class="my-bg-secondary"
   >
     Card
   </div>

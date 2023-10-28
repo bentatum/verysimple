@@ -38,6 +38,7 @@ export interface InputProps extends ComponentPropsWithRef<"input"> {
   inputSize?: InputSize;
   containerProps?: InputContainerProps;
   readOnly?: boolean;
+  rounded?: boolean;
   disableFocusStyle?: boolean;
   forceFocusStyle?: boolean;
   gradientBorderStylesOptions?: GradientBorderStylesOptions;
@@ -54,7 +55,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       fullWidth,
       as = "input",
       inputSize = "md",
-      rounded = true,
+      rounded,
       readOnly,
       containerProps,
       disabled,
@@ -82,9 +83,9 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         className={classNames(
           "inline-flex items-center overflow-hidden",
           {
-            "border my-border":
+            rounded,
+            "border my-border-primary":
               !hasFocus && !containerClassname.includes("border-"),
-            "my-border-radius": !className.match(/rounded/),
             "w-full": fullWidth,
             [shadowTransitionClassNames(className)]: !disabled,
             "shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none":
@@ -135,13 +136,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               "placeholder-zinc-400",
               "disabled:bg-zinc-200 dark:disabled:bg-zinc-600 disabled:cursor-not-allowed",
               {
+                rounded,
                 "w-full": fullWidth,
                 "cursor-default": readOnly,
                 "my-bg-primary": !className.match(/bg-/),
                 "text-left dark:text-white dark:disabled:text-zinc-300 text-black":
                   !className.match(/text-/),
-                "rounded-[15px]": rounded === true,
-                "rounded-full": rounded === "full",
               },
               className
             )}

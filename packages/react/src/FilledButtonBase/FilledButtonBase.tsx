@@ -41,7 +41,6 @@ export const FilledButtonBase = forwardRef<
           buttonShadowClassNames("filled", className),
           fieldSizeClassNames(size),
           {
-            "my-border-radius": !className.match(/rounded/),
             "my-bg-secondary hover:text-white focus:text-white active:text-white":
               color === "neutral",
             "hover:my-bg-gradient-to-r focus:my-bg-gradient-to-r":
