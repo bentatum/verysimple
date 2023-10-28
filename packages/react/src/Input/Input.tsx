@@ -16,7 +16,6 @@ import {
 } from "@/helpers/gradientBorderStyles";
 import { InputSize } from "@/types";
 import { fieldSizeClassNames } from "@/helpers/fieldSizeClassNames";
-import { fieldBorderRadiusClassNames } from "..";
 
 export interface InputContainerClassnameFunctionProps {
   hasFocus: boolean;
@@ -39,7 +38,6 @@ export interface InputProps extends ComponentPropsWithRef<"input"> {
   inputSize?: InputSize;
   containerProps?: InputContainerProps;
   readOnly?: boolean;
-  rounded?: boolean | "full";
   disableFocusStyle?: boolean;
   forceFocusStyle?: boolean;
   gradientBorderStylesOptions?: GradientBorderStylesOptions;
@@ -83,9 +81,10 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         {...containerProps}
         className={classNames(
           "inline-flex items-center overflow-hidden",
-          fieldBorderRadiusClassNames(rounded, containerClassname),
           {
-            "border my-border": !hasFocus && !containerClassname.includes("border-"),
+            "border my-border":
+              !hasFocus && !containerClassname.includes("border-"),
+            "my-border-radius": !className.match(/rounded/),
             "w-full": fullWidth,
             [shadowTransitionClassNames(className)]: !disabled,
             "shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none":

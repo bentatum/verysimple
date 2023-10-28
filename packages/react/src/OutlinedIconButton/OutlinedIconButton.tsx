@@ -17,6 +17,7 @@ export const OutlinedIconButton = forwardRef<
       size={size}
       color={color}
       className={classNames(
+        "rounded-full",
         iconButtonWidthClassNames(size),
         {
           "hover:text-inherit": color === "primary",

@@ -6,7 +6,6 @@ import {
   buttonTextClassNames,
   buttonShadowClassNames,
   fieldSizeClassNames,
-  fieldBorderRadiusClassNames,
 } from "@/helpers";
 
 export interface FilledButtonBaseProps extends ButtonBaseProps {
@@ -41,8 +40,8 @@ export const FilledButtonBase = forwardRef<
           buttonTextClassNames(color, "filled", className),
           buttonShadowClassNames("filled", className),
           fieldSizeClassNames(size),
-          fieldBorderRadiusClassNames(rounded, className),
           {
+            "my-border-radius": !className.match(/rounded/),
             "my-bg-secondary hover:text-white focus:text-white active:text-white":
               color === "neutral",
             "hover:my-bg-gradient-to-r focus:my-bg-gradient-to-r":

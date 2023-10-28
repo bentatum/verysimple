@@ -4,7 +4,7 @@ exports[`DialogCloseButton snapshot 1`] = `
 <div>
   <button
     aria-label="Close"
-    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center min-w-[48px] shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 rounded-full text-base min-h-[48px] focus:bg-zinc-300/20 hover:bg-zinc-300/20 active:bg-zinc-300/20 dark:focus:bg-zinc-750/60 dark:hover:bg-zinc-750/60 dark:active:bg-zinc-750/60"
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center min-w-[48px] shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 text-base min-h-[48px] rounded-full focus:bg-zinc-300/20 hover:bg-zinc-300/20 active:bg-zinc-300/20 dark:focus:bg-zinc-750/60 dark:hover:bg-zinc-750/60 dark:active:bg-zinc-750/60"
     tabindex="0"
   >
     <svg

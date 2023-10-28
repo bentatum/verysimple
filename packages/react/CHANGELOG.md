@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.7.1
+
+### Patch Changes
+
+- 5c7a58c: fix: my border classname
+
 ## 1.7.0
 
 ### Minor Changes

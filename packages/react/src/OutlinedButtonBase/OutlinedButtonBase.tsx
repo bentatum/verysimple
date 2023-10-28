@@ -7,7 +7,6 @@ import {
   buttonShadowClassNames,
   buttonTextClassNames,
   fieldSizeClassNames,
-  fieldBorderRadiusClassNames,
 } from "@/helpers";
 
 export interface OutlinedButtonBaseProps extends ButtonBaseProps {
@@ -62,10 +61,9 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
         disabled={disabled}
         className={classNames(
           // this keeps the size consistent with inputs
-          'box-content',
+          "box-content",
           buttonShadowClassNames("outlined", className),
           buttonTextClassNames(color, "outlined", className),
-          fieldBorderRadiusClassNames(rounded, className),
           fieldSizeClassNames(size),
           {
             border: color !== "primary",
@@ -75,6 +73,7 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
               gradientBorderEligible,
             "focus:my-bg-gradient-to-r focus:border-none focus:p-[1px] focus:text-white":
               gradientBorderEligible,
+            "my-border-radius": !className.match(/rounded/),
           },
           className
         )}

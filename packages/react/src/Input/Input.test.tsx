@@ -25,19 +25,7 @@ describe("Input", () => {
       );
     });
   });
-
-  describe("rounded", () => {
-    it("has a rounded prop", () => {
-      const { container } = render(<Input rounded />);
-      expect(container.firstChild).toHaveClass("rounded-2xl");
-      expect(container.firstChild).not.toHaveClass("rounded-full");
-    });
-    it("has a full rounded prop", () => {
-      const { container } = render(<Input rounded="full" />);
-      expect(container.firstChild).toHaveClass("rounded-full");
-      expect(container.firstChild).not.toHaveClass("rounded-2xl");
-    });
-  });
+  
   describe("defaults", () => {
     test("px", () => {
       render(<Input />);
