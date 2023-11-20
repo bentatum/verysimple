@@ -18,14 +18,14 @@ export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(
             "bg-green-500": checked,
             "my-bg-primary": !checked && !props.className?.includes("bg-"),
           },
-          "relative inline-flex flex-shrink-0 w-10 h-6 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2",
+          "relative inline-flex items-center flex-shrink-0 w-11 h-6 my-border border rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none",
           props.className
         )}
       >
         <span
           className={`${
-            checked ? "translate-x-6" : "translate-x-1"
-          } inline-block h-4 w-4 transform rounded-full bg-white transition`}
+            checked ? "translate-x-5" : "translate-x-0"
+          } inline-block h-5 w-5 transform rounded-full my-bg-secondary transition`}
         />
       </SwitchPrimitive>
     );
