@@ -1,5 +1,15 @@
 # Change Log
 
+## 1.8.0
+
+### Minor Changes
+
+- d518e4f: feat: switch
+
+### Patch Changes
+
+- c78e608: fix: my border classname
+
 ## 1.7.0
 
 ### Minor Changes
