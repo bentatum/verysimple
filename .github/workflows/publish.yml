@@ -1,0 +1,26 @@
+name: Publish Package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+    
+      - uses: volta-cli/action@v4
+        with:
+          registry-url: "https://npm.pkg.github.com"
+    
+      - name: Install dependencies
+        run: yarn install --immutable --immutable-cache
+    
+      - name: Publish
+        run: yarn publish-packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

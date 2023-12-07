@@ -28,5 +28,8 @@
     "@changesets/get-release-plan": "^3.0.17",
     "@changesets/parse": "^0.3.16"
   },
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "volta": {
+    "node": "20.10.0"
+  }
 }
