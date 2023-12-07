@@ -34,8 +34,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# Yarn PnP
-.yarn/cache
-!.yarn/unplugged
-!.pnp.cjs
