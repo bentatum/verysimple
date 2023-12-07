@@ -19,6 +19,8 @@ jobs:
     
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     
       - name: Publish
         run: yarn publish-packages
