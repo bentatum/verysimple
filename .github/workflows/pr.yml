@@ -18,7 +18,7 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
 
       - name: Install dependencies
-        run: yarn install --immutable --immutable-cache --inline-builds
+        run: yarn install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
