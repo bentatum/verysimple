@@ -1,5 +1,16 @@
 # Change Log
 
+## 2.2.1
+
+### Patch Changes
+
+- d272a16: fix: react build
+- 5909053: fix: change
+- 682f2a8: feat: tsconfig library
+- d638317: feat: ci publishing
+- 55e47a2: fix: react no emit
+- 0b50949: Added a readme
+
 ## 2.2.0
 
 ### Minor Changes
