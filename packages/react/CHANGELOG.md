@@ -1,5 +1,16 @@
 # Change Log
 
+## 2.2.0
+
+### Minor Changes
+
+- 513bddc: feat: switch
+- ed068f6: feat: switch
+
+### Patch Changes
+
+- af68a30: feat: switch
+
 ## 1.8.0
 
 ### Minor Changes
