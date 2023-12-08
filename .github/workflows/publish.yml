@@ -19,17 +19,13 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
 
       - name: Set up .npmrc
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+        run: echo "https://registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
     
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     
       - name: Publish
         run: yarn publish-packages
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit changes
         run: |
