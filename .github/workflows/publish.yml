@@ -18,6 +18,13 @@ jobs:
     
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      
+      - name: Create .npmrc
+        run: |
+          echo "@verysimple:registry=https://registry.npmjs.org/" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" >> .npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     
       - name: Publish
         run: yarn publish-packages
