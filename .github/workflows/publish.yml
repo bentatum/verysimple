@@ -28,6 +28,8 @@ jobs:
     
       - name: Publish
         run: yarn publish-packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit changes
         run: |
