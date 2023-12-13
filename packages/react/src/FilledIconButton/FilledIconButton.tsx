@@ -18,7 +18,7 @@ export const FilledIconButton = forwardRef<
       {...props}
       ref={ref}
       size={size}
-      className={classNames(iconButtonWidthClassNames(size), className)}
+      className={classNames("rounded-full", iconButtonWidthClassNames(size), className)}
     />
   );
 });

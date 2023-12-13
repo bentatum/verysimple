@@ -1,6 +1,6 @@
 "use client";
 
-import {  Card } from "@verysimple/react";
+import { Card } from "@verysimple/react";
 import { FC } from "react";
 
 export interface PropsListItem {
@@ -45,13 +45,10 @@ const ComponentPage: FC<ComponentPageProps> = ({
         ))}
       </dl>
       <h2 className="text-2xl font-bold mt-8 mb-4">Usage</h2>
-      <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">
-        <code>{`<Button variant="filled" size="lg">Primary Button</Button>`}</code>
-      </p>
       <h2 className="text-2xl font-bold mt-8 mb-4">Interactive Demo</h2>
       <InteractiveDemo />
       <h2 className="text-2xl font-bold mt-8 mb-4">Code Snippet</h2>
-      <Card>
+      <Card className="bg-zinc-900 p-5">
         <pre className="text-sm text-zinc-500 dark:text-zinc-400">
           {codeSnippet}
         </pre>

@@ -59,11 +59,23 @@ const DialogPage = () => {
         },
       ]}
       InteractiveDemo={InteractiveDemo}
-      codeSnippet={`
-        <div className="flex space-x-4 mb-8">
-            <Dialog open={true} title="Dialog Title" content="Dialog Content" actions={<Button>Close</Button>} />
-        </div>
-    `}
+      codeSnippet={`<div>
+    <Button onClick={() => setDialogOpen(true)}>
+        Click to open
+    </Button>
+    <Dialog
+        open={dialogOpen}
+        onClose={() => setDialogOpen(false)}
+    >
+        <DialogTitle>Dialog Title</DialogTitle>
+        <DialogContent>Dialog Content</DialogContent>
+        <DialogActions>
+          <Button onClick={() => setDialogOpen(false)}>
+            Close
+          </Button>
+        </DialogActions>
+    </Dialog>
+</div>`}
     />
   );
 };

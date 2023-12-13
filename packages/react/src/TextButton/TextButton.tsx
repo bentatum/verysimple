@@ -6,6 +6,7 @@ import {
   fieldPaddingClassNames,
   buttonShadowClassNames,
   fieldSizeClassNames,
+  fieldBorderRadiusClassNames,
 } from "@/helpers";
 
 export interface TextButtonProps extends ButtonBaseProps {}
@@ -41,7 +42,6 @@ export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
         onClick={handleClick}
         className={classNames(
           "relative overflow-auto",
-          // "bg-clip-text my-bg-gradient-to-r hover:my-bg-gradient-to-r active:my-bg-gradient-to-r focus:my-bg-gradient-to-r",
           "transition-colors duration-200 ease-in-out",
           "hover:bg-opacity-20 active:bg-opacity-20 focus:bg-opacity-20",
           "hover:bg-zinc-300 active:bg-zinc-300 focus:bg-zinc-300",
@@ -49,11 +49,7 @@ export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
           fieldPaddingClassNames(size, className),
           buttonShadowClassNames("text", className),
           fieldSizeClassNames(size),
-          // {
-          //   "text-transparent": color === "primary",
-          //   "active:text-transparent focus:text-transparent hover:text-transparent":
-          //     color !== "destructive",
-          // },
+          fieldBorderRadiusClassNames(className),
           className
         )}
       >
