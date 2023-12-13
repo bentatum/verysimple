@@ -20,7 +20,7 @@ const componentTypeMap = new Map<ButtonVariant, ElementType>([
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, ...props }, ref) => {
-    const Component = componentTypeMap.get(variant!) ?? TextButton;
+    const Component = componentTypeMap.get(variant!) ?? FilledButton;
     return <Component ref={ref} {...props} />;
   }
 );

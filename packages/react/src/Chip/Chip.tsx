@@ -20,8 +20,7 @@ export const Chip = forwardRef<HTMLDivElement, ChipProps>(
           {
             "font-semibold": !className.includes("font-"),
             "my-bg-secondary": !className.includes("bg-"),
-            "rounded-full": !className.includes("rounded-"),
-            "text-black dark:text-white": !className.includes("text-"),
+            "rounded-full": !className.includes("rounded-")
           },
           className
         )}

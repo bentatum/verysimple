@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@verysimple/react": "^2.2.1",
-    "next": "14.0.3",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@verysimple/react": "*",
+    "classnames": "^2.3.2",
+    "framer-motion": "^10.16.16",
+    "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
   },
