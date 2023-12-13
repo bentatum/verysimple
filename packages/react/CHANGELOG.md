@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.0
+
+### Major Changes
+
+- 52e9421: feat!: better button defaults. removed rounded prop.
+
 ## 2.2.2
 
 ### Patch Changes
