@@ -1,6 +1,5 @@
-// import Image from 'next/image'
-import { Spinner } from "@verysimple/react";
+import HomePage from "@/components/HomePage";
 
 export default function Home() {
-  return <Spinner />;
+  return <HomePage />;
 }

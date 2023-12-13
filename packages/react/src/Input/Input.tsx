@@ -83,7 +83,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         {...containerProps}
         className={classNames(
           "inline-flex items-center overflow-hidden",
-          fieldBorderRadiusClassNames(rounded, containerClassname),
+          fieldBorderRadiusClassNames(containerClassname),
           {
             "border my-border": !hasFocus && !containerClassname.includes("border-"),
             "w-full": fullWidth,

@@ -65,7 +65,7 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
           'box-content',
           buttonShadowClassNames("outlined", className),
           buttonTextClassNames(color, "outlined", className),
-          fieldBorderRadiusClassNames(rounded, className),
+          fieldBorderRadiusClassNames(className),
           fieldSizeClassNames(size),
           {
             border: color !== "primary",

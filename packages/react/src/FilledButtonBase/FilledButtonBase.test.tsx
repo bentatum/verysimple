@@ -8,14 +8,6 @@ describe("FilledButtonBase", () => {
     expect(screen.getByRole("button").getAttribute("class")).toMatch(/bg-/);
   });
 
-  it("should have a gradient background if primary and not disabled", () => {
-    const { container } = render(
-      <FilledButtonBase color="primary">test</FilledButtonBase>
-    );
-    expect(screen.getByRole("button")).toHaveClass("my-bg-gradient-to-r");
-    expect(container).toMatchSnapshot();
-  });
-
   it("should have a red background if destructive", () => {
     const { container } = render(<FilledButtonBase color="destructive" />);
     expect(screen.getByRole("button")).toHaveClass(

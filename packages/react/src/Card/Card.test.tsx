@@ -17,7 +17,7 @@ describe("Card", () => {
     test("background", () => {
       render(<Card as="button">Card</Card>);
       expect(screen.getByRole("button", { name: "Card" })).toHaveClass(
-        "my-bg-secondary"
+        "my-bg-primary"
       );
     });
   });

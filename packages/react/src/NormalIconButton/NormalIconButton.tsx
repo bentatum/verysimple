@@ -24,7 +24,7 @@ export const NormalIconButton = forwardRef<
       className={classNames(
         iconButtonWidthClassNames(size),
         buttonShadowClassNames("normal", className),
-        fieldBorderRadiusClassNames("full", className),
+        fieldBorderRadiusClassNames(className),
         fieldSizeClassNames(size),
         {
           "focus:bg-zinc-300/20 hover:bg-zinc-300/20 active:bg-zinc-300/20":

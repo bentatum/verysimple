@@ -8,7 +8,7 @@ describe("fieldSizeClassNames", () => {
     expect(fieldSizeClassNames("sm")).toEqual("text-sm min-h-[38px]");
   });
   it("should return text and min-h for md", () => {
-    expect(fieldSizeClassNames("md")).toEqual("text-base min-h-[48px]");
+    expect(fieldSizeClassNames("md")).toEqual("text-base min-h-[44px]");
   });
   it("should return text and min-h for lg", () => {
     expect(fieldSizeClassNames("lg")).toEqual("text-xl min-h-[60px]");

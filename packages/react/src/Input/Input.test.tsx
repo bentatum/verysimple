@@ -26,27 +26,15 @@ describe("Input", () => {
     });
   });
 
-  describe("rounded", () => {
-    it("has a rounded prop", () => {
-      const { container } = render(<Input rounded />);
-      expect(container.firstChild).toHaveClass("rounded-2xl");
-      expect(container.firstChild).not.toHaveClass("rounded-full");
-    });
-    it("has a full rounded prop", () => {
-      const { container } = render(<Input rounded="full" />);
-      expect(container.firstChild).toHaveClass("rounded-full");
-      expect(container.firstChild).not.toHaveClass("rounded-2xl");
-    });
-  });
   describe("defaults", () => {
     test("px", () => {
       render(<Input />);
-      expect(screen.getByRole("textbox")).toHaveClass("px-4");
+      expect(screen.getByRole("textbox")).toHaveClass("px-6");
     });
     test("px override", () => {
       render(<Input className="px-0 pl-10" />);
       expect(screen.getByRole("textbox")).toHaveClass("px-0");
-    expect(screen.getByRole("textbox")).not.toHaveClass("px-4");
+    expect(screen.getByRole("textbox")).not.toHaveClass("px-6");
     });
   });
 

@@ -40,9 +40,9 @@ describe("Button", () => {
       render(<Button variant="outlined">test</Button>);
       expect(screen.getByTestId("outlined")).toBeInTheDocument();
     });
-    it("should default to a text button", () => {
+    it("should default to a filled button", () => {
       render(<Button>test</Button>);
-      expect(screen.getByTestId("text")).toBeInTheDocument();
+      expect(screen.getByTestId("filled")).toBeInTheDocument();
     });
   });
   it("should render normal props like disabled", () => {
