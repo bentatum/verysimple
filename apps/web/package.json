@@ -11,7 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
-    "@verysimple/react": "*",
+    "@verysimple/react": "^3.0.0",
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
