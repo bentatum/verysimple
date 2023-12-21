@@ -13,17 +13,14 @@ describe("Input", () => {
     expect(container).toMatchSnapshot();
   });
   describe("full width", () => {
-    it("sets the textbox to w-full", () => {
-      render(<Input fullWidth />);
+    it("sets the container to w-full", () => {
+      const { container } = render(<Input className="w-full" />);
+      expect(container.firstChild).toHaveClass("w-full");
+    });
+    it("adds the w-full class to the textbox", () => {
+      render(<Input className="w-full" />);
       expect(screen.getByRole("textbox")).toHaveClass("w-full");
-    });
-    it("can be used with a min-w class name", () => {
-      render(<Input fullWidth className="min-w-[200px]" />);
-      expect(screen.getByRole("textbox")).toHaveClass(
-        "w-full",
-        "min-w-[200px]"
-      );
-    });
+    })
   });
 
   describe("defaults", () => {

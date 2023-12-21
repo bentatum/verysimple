@@ -10,11 +10,7 @@ import { fieldPaddingClassNames } from "@/helpers/fieldPaddingClassNames";
 import { shadowTransitionClassNames } from "@/helpers/shadowTransitionClassNames";
 import { InputSize } from "@/types";
 import { fieldSizeClassNames } from "@/helpers/fieldSizeClassNames";
-import { fieldBorderRadiusClassNames } from "..";
-
-export interface InputContainerClassnameFunctionProps {
-  hasFocus: boolean;
-}
+import { fieldBorderRadiusClassNames } from "@/helpers/fieldBorderRadiusClassNames";
 
 export interface InputContainerProps extends ComponentPropsWithoutRef<"div"> {}
 
@@ -22,7 +18,6 @@ export interface InputProps extends ComponentPropsWithRef<"input"> {
   adornmentLeft?: ReactNode;
   adornmentRight?: ReactNode;
   error?: boolean;
-  fullWidth?: boolean;
   as?: ElementType;
   disabled?: boolean;
   inputSize?: InputSize;
@@ -38,7 +33,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       children,
       className = "",
       error,
-      fullWidth,
       as = "input",
       inputSize = "md",
       readOnly,
@@ -50,6 +44,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
   ) => {
     const InputComponent = as;
     const containerClassname = containerProps?.className || "";
+    const fullWidth = className.includes("w-full");
     return (
       <div
         {...containerProps}
@@ -77,7 +72,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               "placeholder-zinc-400",
               "disabled:bg-zinc-200 dark:disabled:bg-zinc-600 disabled:cursor-not-allowed",
               {
-                "w-full": fullWidth,
                 "cursor-default": readOnly,
                 "my-bg-primary": !className.match(/bg-/),
                 "text-left dark:text-white dark:disabled:text-zinc-300 text-black":
