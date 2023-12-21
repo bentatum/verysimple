@@ -7,6 +7,7 @@ const ChipPage = () => {
   return (
     <ComponentPage
       pageTitle="Chip"
+      description="The chip component is used to display content in a chip."
       propsList={[
         {
           name: "as",

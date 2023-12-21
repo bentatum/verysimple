@@ -17,6 +17,7 @@ const InputPage = () => {
   return (
     <ComponentPage
       pageTitle="Input"
+      description="The input component is used to collect user input."
       propsList={[
         {
           name: "placeholder",
