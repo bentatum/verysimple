@@ -1,5 +1,11 @@
 # Change Log
 
+## 4.0.0
+
+### Major Changes
+
+- 32d8c67: feat!: BREAKING CHANGE removing input gradient border
+
 ## 3.0.0
 
 ### Major Changes
