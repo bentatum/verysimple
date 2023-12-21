@@ -1,5 +1,11 @@
 # Change Log
 
+## 5.0.0
+
+### Major Changes
+
+- 2be959d: feat!: remove full width prop on input
+
 ## 4.0.0
 
 ### Major Changes
