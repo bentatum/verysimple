@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "../../node_modules/@verysimple/react/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -46,18 +47,21 @@ const config: Config = {
         ":root": {
           "--my-bg-primary": theme("colors.white"),
           "--my-bg-secondary": theme("colors.zinc.100"),
-          "--my-border": theme("colors.zinc.700"),
-          "--my-border-disabled": theme("colors.zinc.600"),
+          "--my-border": theme("colors.zinc.300"),
+          "--my-border-disabled": theme("colors.zinc.300"),
         },
         ":root.dark": {
           "--my-bg-primary": theme("colors.black"),
           "--my-bg-secondary": theme("colors.zinc.900"),
           "--my-border": theme("colors.zinc.700"),
-          "--my-border-disabled": theme("colors.zinc.600"),
+          "--my-border-disabled": theme("colors.zinc.700"),
         },
       });
 
       addUtilities({
+        ".my-border": {
+          borderColor: "var(--my-border)",
+        },
         ".my-bg-primary": {
           backgroundColor: "var(--my-bg-primary)",
         },

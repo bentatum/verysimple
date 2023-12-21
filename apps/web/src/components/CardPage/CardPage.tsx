@@ -7,6 +7,7 @@ const CardPage = () => {
   return (
     <ComponentPage
       pageTitle="Card"
+      description="The card component is used to display content in a card."
       propsList={[
         {
           name: "as",

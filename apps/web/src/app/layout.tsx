@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/Layout";
 import classNames from "classnames";
+import AppProvider from "@/components/AppProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,8 +42,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={classNames(inter.className, "antialiased")}>
-        <Layout>{children}</Layout>
+      <body className={classNames(inter.className, "antialiased my-bg-primary text-black dark:text-white")}>
+        <AppProvider><Layout>{children}</Layout></AppProvider>
       </body>
     </html>
   );

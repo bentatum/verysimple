@@ -13,6 +13,7 @@ export interface ComponentPageProps {
   propsList: PropsListItem[];
   InteractiveDemo: FC;
   codeSnippet?: string;
+  description?: string;
 }
 
 const ComponentPage: FC<ComponentPageProps> = ({
@@ -20,14 +21,13 @@ const ComponentPage: FC<ComponentPageProps> = ({
   propsList,
   InteractiveDemo,
   codeSnippet,
+  description,
 }) => {
   return (
     <div>
       <h1 className="text-4xl font-bold mb-4">{pageTitle}</h1>
       <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">
-        The Button component is used to trigger an action or event, such as
-        submitting a form, opening a dialog, cancelling an action, or performing
-        a delete operation.
+        {description}
       </p>
       <h2 className="text-2xl font-bold mt-8 mb-4">Props</h2>
       <dl>

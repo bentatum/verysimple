@@ -7,6 +7,7 @@ const ButtonPage = () => {
   return (
     <ComponentPage
       pageTitle="Button"
+      description="The button component is used to trigger an action."
       propsList={[
         {
           name: "variant",

@@ -15,6 +15,8 @@ import useLockBodyScroll from "@/lib/useLockBodyScroll";
 import { XMarkIcon, Bars2Icon } from "@heroicons/react/24/solid";
 import useMediaQuery from "@/lib/useMediaQuery";
 import CopyToClipboardButton from "../CopyToClipboardButton";
+import { useTheme } from "next-themes";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 const MenuItemButton = ({ className, ...props }: any) => {
   return (
@@ -89,11 +91,6 @@ const MenuItems = (props: any) => {
 
 const LayoutWithMenuStateProps = ({ children, menuOpen, closeMenu }: any) => {
   const pathname = usePathname();
-  const [isDrawerOpen, setDrawerOpen] = useState(false);
-
-  const toggleDrawer = () => {
-    setDrawerOpen(!isDrawerOpen);
-  };
 
   const isMd = useMediaQuery("(min-width: 768px)");
 
@@ -109,9 +106,11 @@ const LayoutWithMenuStateProps = ({ children, menuOpen, closeMenu }: any) => {
 
   useLockBodyScroll(menuOpen);
 
+  const { resolvedTheme, setTheme } = useTheme();
+
   return (
     <>
-      <header className="w-full z-50 shadow my-bg-primary backdrop-blur opacity-80">
+      <header className="w-full z-50 shadow my-bg-primary">
         <div className="mx-auto max-w-screen-xl h-20 flex items-center justify-between px-5">
           <Link href="/">
             {" "}
@@ -122,13 +121,18 @@ const LayoutWithMenuStateProps = ({ children, menuOpen, closeMenu }: any) => {
               verysimple
             </h1>
           </Link>
-          <div>
+          <div className="flex items-center gap-2">
             <CopyToClipboardButton
               size="xs"
               variant="filled"
               text="yarn add @verysimple/react"
               className="hidden sm:inline-flex"
             />
+            <IconButton variant="filled" size="xs" onClick={() => {
+              setTheme(resolvedTheme === "dark" ? "light" : "dark")
+            }}>
+              {resolvedTheme === "light" ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
+            </IconButton>
             <Menu.Button
               as={IconButton}
               size="sm"

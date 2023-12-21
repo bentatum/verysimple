@@ -23,6 +23,7 @@ const SwitchPage = () => {
   return (
     <ComponentPage
       pageTitle="Switch"
+      description="The switch component is used to toggle a boolean value."
       propsList={[
         {
           name: "checked",

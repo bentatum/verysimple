@@ -48,6 +48,7 @@ const DialogPage = () => {
   return (
     <ComponentPage
       pageTitle="Dialog"
+      description="The dialog component is used to display content in a dialog."
       propsList={[
         {
           name: "open",
