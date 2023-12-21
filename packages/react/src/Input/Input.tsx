@@ -44,8 +44,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       readOnly,
       containerProps,
       disabled,
-      onFocus,
-      onBlur,
       ...props
     },
     ref

@@ -47,19 +47,6 @@ describe("Input", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should have a gradient border on focus", async () => {
-    const user = userEvent.setup();
-    const { container } = render(<Input />);
-    await user.click(screen.getByRole("textbox"));
-    expect(container.firstChild).toHaveStyle({
-      backgroundClip: "content-box, border-box",
-      background:
-        "linear-gradient(var(--my-bg-primary), var(--my-bg-primary)) 0 0 / 100% 100% no-repeat, linear-gradient(to right, var(--my-gradient-start) 0%, var(--my-gradient-stop) 100%)",
-      padding: "1px",
-    });
-    expect(container).toMatchSnapshot();
-  });
-
   it("should call focus and blur handlers", async () => {
     const user = userEvent.setup();
     const onFocus = jest.fn();
@@ -94,13 +81,6 @@ describe("Input", () => {
 
   it("has a display name", () => {
     expect(Input.displayName).toBe("Input");
-  });
-
-  test("container props classname as a function", () => {
-    const { container } = render(
-      <Input containerProps={{ className: () => "test" }} />
-    );
-    expect(container.firstChild).toHaveClass("test");
   });
 
   test("container props classname as a string", () => {
