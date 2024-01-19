@@ -19,6 +19,9 @@ export const Badge = forwardRef<HTMLDivElement, BadgeProps>(
     { children, badgeContent, badgePosition = "top-right", className = "" },
     ref
   ) => {
+    if (!badgeContent) {
+      return <>{children}</>;
+    }
     const hasOverrides = className.match(
       /top-|right-|bottom-|left-|translate-/
     );

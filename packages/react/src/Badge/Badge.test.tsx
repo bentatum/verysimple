@@ -12,13 +12,19 @@ describe("Badge", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should not render when badge content is empty", () => {
-    render(
+  it("should only render children when badge content is empty", () => {
+    const { container } = render(
       <Badge badgeContent={false}>
         <button>Notifications</button>
       </Badge>
     );
-    expect(screen.queryByText("Notifications")).toBeInTheDocument();
+    expect(container).toMatchInlineSnapshot(`
+<div>
+  <button>
+    Notifications
+  </button>
+</div>
+`);
   });
 
   describe("badge position", () => {

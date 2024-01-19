@@ -1,3 +1,4 @@
+/** @type {import('jest').Config} */
 module.exports = {
   testEnvironment: "jsdom",
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
@@ -18,4 +19,5 @@ module.exports = {
     "@/(.*)$": "<rootDir>/src/$1",
   },
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
+  prettierPath: null,
 };
