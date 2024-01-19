@@ -1,5 +1,11 @@
 # Change Log
 
+## 5.1.0
+
+### Minor Changes
+
+- 6da5e77: feat: badge
+
 ## 5.0.0
 
 ### Major Changes
