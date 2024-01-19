@@ -2,6 +2,7 @@
 
 exports[`top level exports matches snapshot 1`] = `
 [
+  "Badge",
   "Button",
   "ButtonBase",
   "Card",
