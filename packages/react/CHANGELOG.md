@@ -1,5 +1,11 @@
 # Change Log
 
+## 5.1.1
+
+### Patch Changes
+
+- 995dd4c: fix: dont render a container when badge content is null
+
 ## 5.1.0
 
 ### Minor Changes
