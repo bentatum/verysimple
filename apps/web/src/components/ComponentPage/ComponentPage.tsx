@@ -46,7 +46,9 @@ const ComponentPage: FC<ComponentPageProps> = ({
       </dl>
       <h2 className="text-2xl font-bold mt-8 mb-4">Usage</h2>
       <h2 className="text-2xl font-bold mt-8 mb-4">Interactive Demo</h2>
-      <InteractiveDemo />
+      <div>
+        <InteractiveDemo />
+      </div>
       <h2 className="text-2xl font-bold mt-8 mb-4">Code Snippet</h2>
       <Card className="bg-zinc-900 p-5">
         <pre className="text-sm text-zinc-500 dark:text-zinc-400">

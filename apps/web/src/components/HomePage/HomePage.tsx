@@ -1,12 +1,13 @@
 "use client";
 
-import { Button, Chip } from "@verysimple/react";
+import { Button, Chip, Badge } from "@verysimple/react";
 import CopyToClipboardButton from "../CopyToClipboardButton";
 import classNames from "classnames";
 import ComponentDisplayCard from "../ComponentDisplayCard";
 import Link from "next/link";
 import { InteractiveDemo as SwitchInteractiveDemo } from "../SwitchPage";
 import { InteractiveDemo as InputInteractiveDemo } from "../InputPage";
+import { Card } from "@verysimple/react";
 
 const ComponentDisplayCardTitle: React.FC<any> = ({ className, children }) => {
   return (
@@ -48,6 +49,12 @@ const HomePage = () => {
       href: "/components/button",
       title: "Button",
       children: <Button color="primary">Click me</Button>,
+    },
+    {
+      href: "/components/badge",
+      title: 'Badge',
+      children: <Badge badgeContent={<div className="h-3 w-3 bg-green-500 rounded-full" />}><Card className="my-bg-secondary h-10 w-20" /></Badge>,
+      
     },
     {
       href: "/components/card",
