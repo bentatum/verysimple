@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormError should be a red alert 1`] = `
+<div>
+  <div
+    class="mt-2 text-xs text-red-500 font-medium"
+    role="alert"
+  >
+    test
+  </div>
+</div>
+`;

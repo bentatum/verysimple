@@ -15,6 +15,9 @@ exports[`top level exports matches snapshot 1`] = `
   "FilledButton",
   "FilledButtonBase",
   "FilledIconButton",
+  "FormError",
+  "FormHelpText",
+  "FormLabel",
   "GradientBorder",
   "buttonShadowClassNames",
   "buttonTextClassNames",
@@ -36,5 +39,6 @@ exports[`top level exports matches snapshot 1`] = `
   "SvgIcon",
   "Switch",
   "TextButton",
+  "TextField",
 ]
 `;

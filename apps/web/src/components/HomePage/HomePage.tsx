@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Chip, Badge } from "@verysimple/react";
+import { Button, Chip, Badge, TextField } from "@verysimple/react";
 import CopyToClipboardButton from "../CopyToClipboardButton";
 import classNames from "classnames";
 import ComponentDisplayCard from "../ComponentDisplayCard";
@@ -68,6 +68,11 @@ const HomePage = () => {
     {
       href: "/components/dialog",
       title: "Dialog",
+    },
+    {
+      href: "/components/text-field",
+      title: "TextField",
+      children: <TextField label="Greetings" placeholder="Type here..." helpText="uh oh, help!" />,
     },
     {
       href: "/components/input",
