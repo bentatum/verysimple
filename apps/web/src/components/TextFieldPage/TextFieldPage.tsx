@@ -1,12 +1,12 @@
 "use client";
 
-import { TextField } from "@verysimple/react";
+// import { TextField } from "@verysimple/react";
 import ComponentPage from "../ComponentPage";
 
 export const InteractiveDemo = () => {
   return (
     <div>
-      <TextField error="Oh no..." id="ok" label="Hello" placeholder="Type here..." />
+      {/* <TextField error="Oh no..." id="ok" label="Hello" placeholder="Type here..." /> */}
     </div>
   );
 };
