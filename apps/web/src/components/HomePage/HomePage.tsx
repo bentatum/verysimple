@@ -52,9 +52,14 @@ const HomePage = () => {
     },
     {
       href: "/components/badge",
-      title: 'Badge',
-      children: <Badge badgeContent={<div className="h-3 w-3 bg-green-500 rounded-full" />}><Card className="my-bg-secondary h-10 w-20" /></Badge>,
-      
+      title: "Badge",
+      children: (
+        <Badge
+          badgeContent={<div className="h-3 w-3 bg-green-500 rounded-full" />}
+        >
+          <Card className="my-bg-secondary h-10 w-20" />
+        </Badge>
+      ),
     },
     {
       href: "/components/card",
@@ -69,6 +74,18 @@ const HomePage = () => {
       href: "/components/dialog",
       title: "Dialog",
     },
+    // {
+    //   href: "/components/text-field",
+    //   title: "TextField",
+    //   children: (
+    //     <TextField
+    //       id="textfield-demo"
+    //       label="Greetings"
+    //       placeholder="Type here..."
+    //       helpText="uh oh, help!"
+    //     />
+    //   ),
+    // },
     {
       href: "/components/input",
       title: "Input",
