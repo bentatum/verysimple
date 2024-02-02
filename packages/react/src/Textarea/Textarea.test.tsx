@@ -1,18 +1,22 @@
 import { render, screen } from "@testing-library/react";
 import { createRef } from "react";
-import { createMock } from "ts-jest-mock";
 import Input from "../Input";
 import Textarea from "./Textarea";
 
-jest.mock("../Input", () => jest.fn());
-const InputMock = createMock(Input).mockImplementation((props) => (
-  <input {...props} data-testid="input" />
-));
+// Mock the Input component directly with jest.mock
+jest.mock("../Input", () => {
+  return {
+    __esModule: true,
+    default: jest.fn().mockImplementation((props) => (
+      <input {...props} data-testid="input" />
+    )),
+  };
+});
 
 describe("Textarea", () => {
   it("should call the input as a textarea", () => {
     render(<Textarea />);
-    expect(InputMock).toBeCalledWith(
+    expect(Input).toBeCalledWith(
       expect.objectContaining({
         as: "textarea",
       }),

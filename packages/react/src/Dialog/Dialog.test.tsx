@@ -4,28 +4,28 @@ import "@/test/mocks/window/IntersectionObserver";
 import userEvent from "@testing-library/user-event";
 import { createRef, ReactNode } from "react";
 import { Transition } from "@headlessui/react";
-import { createMock } from "ts-jest-mock";
 
+// Directly mock Transition component from @headlessui/react
 jest.mock("@headlessui/react", () => {
-  const { Transition, ...rest } = jest.requireActual("@headlessui/react");
+  const actual = jest.requireActual("@headlessui/react");
   return {
-    ...rest,
+    ...actual,
     Transition: {
-      ...Transition,
-      render: jest.fn(({ children }) => {
-        return <div>{children as ReactNode}</div>;
-      }),
-      Child: jest.fn(({ children }) => {
-        return <div>{children as ReactNode}</div>;
-      }),
+      ...actual.Transition,
+      render: jest.fn(({ children }) => <div>{children as ReactNode}</div>),
+      Child: jest.fn(({ children }) => <div>{children as ReactNode}</div>),
     },
   };
 });
-const TransitionMock = createMock((Transition as any).render);
+
+// Use the mocked Transition.render for assertions
+const TransitionMock = jest.fn((Transition as any).render);
 
 beforeEach(() => {
   // mute focus trap warning
   jest.spyOn(console, "warn").mockImplementation(() => {});
+  // Clear all instances and calls to constructor and all methods:
+  TransitionMock.mockClear();
 });
 
 describe("Dialog", () => {
@@ -53,7 +53,7 @@ describe("Dialog", () => {
     expect(baseElement).toMatchSnapshot();
     await user.click(screen.getByRole("button", { name: "Close" }));
     expect(onClose).toBeCalledTimes(1);
-    TransitionMock.mockImplementationOnce(({ children, afterLeave }: any) => {
+    Transition.render.mockImplementationOnce(({ children, afterLeave }: any) => {
       afterLeave!();
       return <div>{children as ReactNode}</div>;
     });
@@ -69,7 +69,7 @@ describe("Dialog", () => {
   it("forwards the ref", () => {
     const ref = createRef<HTMLDivElement>();
     render(
-      <Dialog ref={ref} open={true} onClose={() => {}}>
+      <Dialog ref={ref} open onClose={() => {}}>
         test
       </Dialog>
     );
