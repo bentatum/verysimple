@@ -1,5 +1,11 @@
 # Change Log
 
+## 5.2.0
+
+### Minor Changes
+
+- 8d2c1a8: feat: text field and related components
+
 ## 5.1.1
 
 ### Patch Changes
