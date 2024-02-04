@@ -11,10 +11,10 @@ export const fieldPaddingClassNames = (
       size: hasOverride
         ? {}
         : {
-            xs: "px-3",
-            sm: "px-4",
-            md: "px-5",
-            lg: "px-6",
+            xs: "px-2",
+            sm: "px-3",
+            md: "px-4",
+            lg: "px-5",
           },
     },
   })({ size });

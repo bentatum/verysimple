@@ -9,7 +9,7 @@ exports[`Input should not have a gradient border if disable focus style is true 
       class="w-full relative inline-flex items-center"
     >
       <input
-        class="text-base min-h-[44px] px-5 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
+        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
       />
     </div>
   </div>
@@ -25,7 +25,7 @@ exports[`Input should not have a gradient border if disable focus style is true 
       class="w-full relative inline-flex items-center"
     >
       <input
-        class="text-base min-h-[44px] px-5 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
+        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
       />
     </div>
   </div>
@@ -41,7 +41,7 @@ exports[`Input should not have shadow classnames when disabled 1`] = `
       class="w-full relative inline-flex items-center"
     >
       <input
-        class="text-base min-h-[44px] px-5 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
+        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
         disabled=""
       />
     </div>
@@ -58,7 +58,7 @@ exports[`Input should render 1`] = `
       class="w-full relative inline-flex items-center"
     >
       <input
-        class="text-base min-h-[44px] px-5 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
+        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
       />
     </div>
   </div>
