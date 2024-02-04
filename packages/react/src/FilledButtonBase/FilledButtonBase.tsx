@@ -8,6 +8,7 @@ import {
   fieldSizeClassNames,
   fieldBorderRadiusClassNames,
 } from "@/helpers";
+import { cva } from "class-variance-authority";
 
 export interface FilledButtonBaseProps extends ButtonBaseProps {
   color?: ButtonColor;
@@ -28,6 +29,7 @@ export const FilledButtonBase = forwardRef<
     },
     ref
   ) => {
+    const hasBgColor = className.includes("bg-");
     return (
       <ButtonBase
         {...props}
@@ -36,20 +38,23 @@ export const FilledButtonBase = forwardRef<
         disabled={disabled}
         className={classNames(
           "transition-colors duration-200 ease-in-out",
-          buttonTextClassNames(color, "filled", className),
+          buttonTextClassNames(className),
           buttonShadowClassNames("filled", className),
           fieldSizeClassNames(size),
           fieldBorderRadiusClassNames(className),
-          {
-            ...(!className.includes("bg-") && {
-              "my-bg-secondary": color === "neutral",
-              "bg-primary-500 text-primaryoffset": color === "primary",
-              "bg-red-500 disabled:bg-red-400 disabled:text-white":
-                color === "destructive",
-              "disabled:bg-zinc-300 dark:disabled:bg-zinc-900":
-                color !== "destructive",
-            }),
-          },
+          cva([], {
+            variants: {
+              color: {
+                neutral: "my-bg-secondary",
+                primary: "bg-primary-500 text-primaryoffset",
+                destructive:
+                  "bg-red-500 disabled:bg-red-400 disabled:text-white",
+              },
+            },
+            defaultVariants: {
+              color: "neutral",
+            },
+          })({ color }),
           className
         )}
       >

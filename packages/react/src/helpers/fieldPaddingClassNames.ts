@@ -1,16 +1,21 @@
 import { ElementSize } from "@/types";
-import classNames from "classnames";
+import { cva } from "class-variance-authority";
 
 export const fieldPaddingClassNames = (
   size: ElementSize,
   className: string = ""
 ) => {
-  return !className.match(/px-/)
-    ? classNames({
-        "px-4": size === "xs",
-        "px-5": size === "sm",
-        "px-6": size === "md",
-        "px-8": size === "lg",
-      })
-    : "";
+  const hasOverride = /px-/.test(className);
+  return cva(className, {
+    variants: {
+      size: hasOverride
+        ? {}
+        : {
+            xs: "px-3",
+            sm: "px-4",
+            md: "px-5",
+            lg: "px-6",
+          },
+    },
+  })({ size });
 };

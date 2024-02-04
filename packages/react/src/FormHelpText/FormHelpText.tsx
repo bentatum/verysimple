@@ -15,10 +15,7 @@ export const FormHelpText: FC<FormHelpTextProps> = forwardRef<
       {...props}
       ref={ref}
       className={classNames(
-        "text-xs font-medium text-zinc-500 dark:text-zinc-300",
-        {
-          // italic: !props.className?.includes("not-italic"),
-        },
+        "text-xs font-medium text-gray-500 dark:text-gray-300",
         props.className
       )}
     />

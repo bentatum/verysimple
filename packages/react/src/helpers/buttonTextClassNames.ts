@@ -1,26 +1,18 @@
 import { ButtonColor } from "@/types";
+import { cva } from "class-variance-authority";
 import classNames from "classnames";
 // import { ButtonVariant } from "..";
 
 export const buttonTextClassNames = (
-  color: ButtonColor,
-  variant: any,
   className: string = ""
-) =>
-  classNames({
-    "text-red-500": color === "destructive" && !className.match(/text-/),
-    "disabled:text-zinc-400 dark:disabled:text-zinc-500":
-      color !== "destructive",
-    "disabled:text-red-400":
-      color === "destructive" &&
-      variant !== "filled" &&
-      !className.match(/disabled:text-/),
-    "dark:disabled:text-zinc-800":
-      color === "destructive" &&
-      variant === "filled" &&
-      !className.match(/disabled:text-/),
-    "whitespace-nowrap": !className.match(/whitespace-/),
-    "font-bold": !className.match(
-      /font-[thin|extralight|light|normal|medium|semibold|extrabold|black]/
-    ),
-  });
+) => {
+  return classNames(
+    {
+      "whitespace-nowrap": !className.match(/whitespace-/),
+      "font-bold": !className.match(
+        /font-[thin|extralight|light|normal|medium|semibold|extrabold|black]/
+      ),
+    }
+  );
+};
+classNames();

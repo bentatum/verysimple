@@ -151,7 +151,7 @@ const LayoutWithMenuStateProps = ({ children, menuOpen, closeMenu }: any) => {
       {isMd ? (
         <MenuItems className="absolute w-64 mt-2 top-12 right-5 z-30 my-bg-secondary shadow rounded py-3" />
       ) : (
-        <MenuItems className="z-40 fixed top-0 w-screen h-screen pt-24 bg-white/80 dark:bg-zinc-900/90 backdrop-blur-lg left-0 p-2" />
+        <MenuItems className="z-40 fixed top-0 w-screen h-screen pt-24 bg-white/80 dark:bg-gray-900/90 backdrop-blur-lg left-0 p-2" />
       )}
       {children}
     </>

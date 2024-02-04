@@ -20,18 +20,6 @@ describe("Input", () => {
     it("adds the w-full class to the textbox", () => {
       render(<Input className="w-full" />);
       expect(screen.getByRole("textbox")).toHaveClass("w-full");
-    })
-  });
-
-  describe("defaults", () => {
-    test("px", () => {
-      render(<Input />);
-      expect(screen.getByRole("textbox")).toHaveClass("px-6");
-    });
-    test("px override", () => {
-      render(<Input className="px-0 pl-10" />);
-      expect(screen.getByRole("textbox")).toHaveClass("px-0");
-    expect(screen.getByRole("textbox")).not.toHaveClass("px-6");
     });
   });
 

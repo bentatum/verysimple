@@ -36,12 +36,12 @@ describe("InputAdornment", () => {
 
   it("can override text color", () => {
     const { container } = render(
-      <InputAdornment direction="left" className="text-zinc-400">
+      <InputAdornment direction="left" className="text-gray-400">
         Test
       </InputAdornment>
     );
-    expect(container.firstChild).toHaveClass("text-zinc-400");
-    expect(container.firstChild).not.toHaveClass("text-zinc-500");
+    expect(container.firstChild).toHaveClass("text-gray-400");
+    expect(container.firstChild).not.toHaveClass("text-gray-500");
   });
 
   

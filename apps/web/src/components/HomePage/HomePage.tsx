@@ -100,7 +100,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="bg-zinc-900 relative min-h-screen text-white">
+      <div className="bg-gray-900 relative min-h-screen text-white">
         {stars}
         <Section className="px-5 overflow-auto h-[500px] w-full bg-gradient-to-b from-primary-500/20 to-transparent text-center">
           <div className=" select-none relative z-20 flex flex-col gap-5 justify-center h-full">

@@ -31,19 +31,29 @@ const ButtonPage = () => {
         },
       ]}
       InteractiveDemo={() => (
+        <div>
         <div className="flex space-x-4 mb-8">
           <Button variant="text">Text</Button>
           <Button variant="filled">Filled</Button>
           <Button variant="outlined">Outlined</Button>
         </div>
-      )}
-      codeSnippet={`
         <div className="flex space-x-4 mb-8">
-            <Button variant="text">Text</Button>
-            <Button variant="filled">Filled</Button>
-            <Button variant="outlined">Outlined</Button>
+          <Button variant="text" color="primary">Text</Button>
+          <Button variant="filled" color="primary">Filled</Button>
+          <Button variant="outlined" color="primary">Outlined</Button>
         </div>
-    `}
+        <div className="flex space-x-4 mb-8">
+          <Button variant="text" color="destructive">Text</Button>
+          <Button variant="filled" color="destructive">Filled</Button>
+          <Button variant="outlined" color="destructive">Outlined</Button>
+        </div>
+        </div>
+      )}
+      codeSnippet={`<div className="flex space-x-4 mb-8">
+  <Button variant="text">Text</Button>
+  <Button variant="filled">Filled</Button>
+  <Button variant="outlined">Outlined</Button>
+</div>`}
     />
   );
 };
