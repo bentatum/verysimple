@@ -69,12 +69,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               fieldSizeClassNames(inputSize),
               fieldPaddingClassNames(inputSize, className),
               "focus:outline-none appearance-none",
-              "placeholder-zinc-400",
-              "disabled:bg-zinc-200 dark:disabled:bg-zinc-600 disabled:cursor-not-allowed",
+              "placeholder-gray-400",
+              "disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed",
               {
                 "cursor-default": readOnly,
                 "my-bg-primary": !className.match(/bg-/),
-                "text-left dark:text-white dark:disabled:text-zinc-300 text-black":
+                "text-left dark:text-white dark:disabled:text-gray-300 text-black":
                   !className.match(/text-/),
               },
               className

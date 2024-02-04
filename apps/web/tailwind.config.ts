@@ -31,11 +31,12 @@ const config: Config = {
         },
       },
       animation: {
-        ripple: "ripple 5s linear forwards",
+        ripple: "ripple 0.5s linear forwards",
         twinkle: "twinkle 5s infinite",
         typing: 'typing 3.5s steps(40, end), blink .75s step-end infinite',
       },
       colors: {
+        gray: colors.zinc,
         primary: colors.purple,
         primaryoffset: colors.white,
       },
@@ -46,15 +47,15 @@ const config: Config = {
       addBase({
         ":root": {
           "--my-bg-primary": theme("colors.white"),
-          "--my-bg-secondary": theme("colors.zinc.100"),
-          "--my-border": theme("colors.zinc.300"),
-          "--my-border-disabled": theme("colors.zinc.300"),
+          "--my-bg-secondary": theme("colors.gray.200"),
+          "--my-border": theme("colors.gray.300"),
+          "--my-border-disabled": theme("colors.gray.300"),
         },
         ":root.dark": {
           "--my-bg-primary": theme("colors.black"),
-          "--my-bg-secondary": theme("colors.zinc.900"),
-          "--my-border": theme("colors.zinc.700"),
-          "--my-border-disabled": theme("colors.zinc.700"),
+          "--my-bg-secondary": theme("colors.gray.900"),
+          "--my-border": theme("colors.gray.700"),
+          "--my-border-disabled": theme("colors.gray.700"),
         },
       });
 

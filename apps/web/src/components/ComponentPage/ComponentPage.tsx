@@ -26,9 +26,15 @@ const ComponentPage: FC<ComponentPageProps> = ({
   return (
     <div>
       <h1 className="text-4xl font-bold mb-4">{pageTitle}</h1>
-      <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">
+      <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
         {description}
       </p>
+
+      <h2 className="text-2xl font-bold mt-8 mb-4">Demo</h2>
+      <div>
+        <InteractiveDemo />
+      </div>
+
       <h2 className="text-2xl font-bold mt-8 mb-4">Props</h2>
       <dl>
         {propsList.map((prop) => (
@@ -37,21 +43,17 @@ const ComponentPage: FC<ComponentPageProps> = ({
               <h3 className="font-mono">{prop.name}</h3>
             </dt>
             <dd>
-              <p className="text-zinc-500 dark:text-zinc-400">
+              <p className="text-gray-500 dark:text-gray-400">
                 {prop.description}
               </p>
             </dd>
           </div>
         ))}
       </dl>
-      <h2 className="text-2xl font-bold mt-8 mb-4">Usage</h2>
-      <h2 className="text-2xl font-bold mt-8 mb-4">Interactive Demo</h2>
-      <div>
-        <InteractiveDemo />
-      </div>
+
       <h2 className="text-2xl font-bold mt-8 mb-4">Code Snippet</h2>
-      <Card className="bg-zinc-900 p-5">
-        <pre className="text-sm text-zinc-500 dark:text-zinc-400">
+      <Card className="bg-gray-900 p-5">
+        <pre className="text-sm text-gray-500 dark:text-gray-400">
           {codeSnippet}
         </pre>
       </Card>

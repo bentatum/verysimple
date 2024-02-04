@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { FC, forwardRef } from "react";
 import { ButtonBase, ButtonBaseProps } from "@/ButtonBase";
-import { GradientBorder, GradientBorderProps } from "@/GradientBorder";
+import { GradientBorderProps } from "@/GradientBorder";
 import type { ButtonColor } from "@/types";
 import {
   buttonShadowClassNames,
@@ -9,11 +9,10 @@ import {
   fieldSizeClassNames,
   fieldBorderRadiusClassNames,
 } from "@/helpers";
+import { cva } from "class-variance-authority";
 
 export interface OutlinedButtonBaseProps extends ButtonBaseProps {
   color?: ButtonColor;
-  GradientBorderProps?: GradientBorderProps;
-  rounded?: boolean | "full";
 }
 
 export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
@@ -27,55 +26,37 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
       disabled,
       size = "md",
       as = "button",
-      rounded = "full",
       GradientBorderProps,
       ...props
     },
     ref
   ) => {
-    const GradientBorderButton = forwardRef<any, GradientBorderProps>(
-      (props, ref) => {
-        return (
-          <GradientBorder
-            {...props}
-            as={as}
-            ref={ref}
-            borderColor={disabled ? "var(--my-border-disabled)" : undefined}
-            {...GradientBorderProps}
-          />
-        );
-      }
-    );
-
-    const Component = color !== "primary" ? as : GradientBorderButton;
-    const gradientBorderEligible =
-      color !== "destructive" &&
-      !disabled &&
-      !className.match(/hover:text-|focus:text-/);
-
     return (
       <ButtonBase
         {...props}
         ref={ref}
         size={size}
-        as={Component}
+        as={as}
         disabled={disabled}
         className={classNames(
           // this keeps the size consistent with inputs
-          'box-content',
+          "box-content",
+          "border",
           buttonShadowClassNames("outlined", className),
-          buttonTextClassNames(color, "outlined", className),
+          buttonTextClassNames(className),
           fieldBorderRadiusClassNames(className),
           fieldSizeClassNames(size),
-          {
-            border: color !== "primary",
-            "my-border": color === "neutral",
-            "border-red-500 disabled:border-red-400": color === "destructive",
-            "hover:my-bg-gradient-to-r hover:border-none hover:p-[1px] hover:text-white":
-              gradientBorderEligible,
-            "focus:my-bg-gradient-to-r focus:border-none focus:p-[1px] focus:text-white":
-              gradientBorderEligible,
-          },
+          cva([], {
+            variants: {
+              color: !className.match(/border/)
+                ? {
+                    neutral: "my-border",
+                    primary: "border-primary-500 text-primary-500",
+                    destructive: "border-red-500 disabled:border-red-400 text-red-500",
+                  }
+                : {},
+            },
+          })({ color }),
           className
         )}
       />

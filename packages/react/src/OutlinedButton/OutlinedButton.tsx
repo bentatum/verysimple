@@ -37,10 +37,10 @@ export const OutlinedButton = forwardRef<
           className={classNames(
             fieldPaddingClassNames(size),
             "w-full flex items-center justify-center",
-            {
-              "text-transparent bg-clip-text my-bg-gradient-to-r":
-                color === "primary" && !disabled,
-            }
+            // {
+            //   "text-transparent bg-clip-text my-bg-gradient-to-r":
+            //     color === "primary" && !disabled,
+            // }
           )}
         >
           {children}

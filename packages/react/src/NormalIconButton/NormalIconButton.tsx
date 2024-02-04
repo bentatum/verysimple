@@ -27,9 +27,9 @@ export const NormalIconButton = forwardRef<
         fieldBorderRadiusClassNames(className),
         fieldSizeClassNames(size),
         {
-          "focus:bg-zinc-300/20 hover:bg-zinc-300/20 active:bg-zinc-300/20":
+          "focus:bg-gray-300/20 hover:bg-gray-300/20 active:bg-gray-300/20":
             color !== "destructive" && !disabled,
-          "dark:focus:bg-zinc-750/60 dark:hover:bg-zinc-750/60 dark:active:bg-zinc-750/60":
+          "dark:focus:bg-gray-750/60 dark:hover:bg-gray-750/60 dark:active:bg-gray-750/60":
             color !== "destructive" && !disabled,
           "focus:bg-red-500/20 hover:bg-red-500/20 active:bg-red-500/20":
             color === "destructive" && !disabled,

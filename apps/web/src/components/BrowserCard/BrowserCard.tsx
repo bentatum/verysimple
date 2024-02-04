@@ -14,10 +14,10 @@ const BrowserCard: FC<BrowserCardProps> = ({ className, url, ...props }) => {
       className={classNames("", className)}
       toolbarSlot={
         <Card className="hidden md:flex  ml-20 items-center w-full pl-3 py-1 justify-between truncate st-bg-secondary overflow-hidden text-ellipsis">
-          <div className="text-sm text-zinc-600 dark:text-white text-ellipsis overflow-hidden">
+          <div className="text-sm text-gray-600 dark:text-white text-ellipsis overflow-hidden">
             {url}
           </div>
-          <ArrowPathIcon className="h-4 w-4 text-zinc-500 dark:text-white mx-5" />
+          <ArrowPathIcon className="h-4 w-4 text-gray-500 dark:text-white mx-5" />
         </Card>
       }
       {...props}

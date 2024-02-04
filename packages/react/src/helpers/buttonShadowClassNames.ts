@@ -9,7 +9,7 @@ export const buttonShadowClassNames = (
     ? ""
     : classNames(
         {
-          "shadow-sm focus:shadow-md hover:shadow-md disabled:shadow-none":
+          "shadow-sm hover:shadow-md disabled:shadow-none":
             variant === "filled" ||
             variant === "outlined" ||
             variant === "normal",

@@ -29,7 +29,7 @@ export const InputAdornment: FC<InputAdornmentProps> = forwardRef<
           {
             "items-center": !className.match(/items-/),
             "pointer-events-none": !className.match(/pointer-events-/),
-            "text-zinc-500 dark:text-zinc-300": !className.match(/text-/),
+            "text-gray-500 dark:text-gray-300": !className.match(/text-/),
             "rounded-l-xl -left-px": direction === "left",
             "rounded-r-xl -right-px": direction === "right",
           },
