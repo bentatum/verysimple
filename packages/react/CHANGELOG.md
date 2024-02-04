@@ -1,5 +1,11 @@
 # Change Log
 
+## 6.0.1
+
+### Patch Changes
+
+- 0354ffd: chore: replace classnames with clsx since its a dependency of cva
+
 ## 6.0.0
 
 ### Major Changes
