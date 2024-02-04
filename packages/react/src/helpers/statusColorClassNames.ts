@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { StatusColors } from "@/types";
 import { cva } from "class-variance-authority";
 

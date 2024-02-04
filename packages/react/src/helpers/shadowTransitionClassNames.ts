@@ -1,6 +1,6 @@
-import classNames from "classnames";
+import clsx from "clsx";
 
 export const shadowTransitionClassNames = (className: string = "") =>
-  classNames({
+  clsx({
     "transition-shadow ease-in duration-100": !className.match(/transition/),
   });

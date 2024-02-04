@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { Dialog as UIDialog } from "@headlessui/react";
 import { forwardRef } from "react";
 import type { $ElementProps } from "@/types";
@@ -15,7 +15,7 @@ export const DialogContent = forwardRef<HTMLDivElement, DialogContentProps>(
         as="div"
         {...props}
         ref={ref}
-        className={classNames(
+        className={clsx(
           "px-6 text-base",
           {
             "pb-8": !userpb && !loose,

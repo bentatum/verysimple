@@ -1,6 +1,6 @@
 import { FC, forwardRef } from "react";
 import { Dialog as DialogPrimitive } from "@headlessui/react";
-import classNames from "classnames";
+import clsx from "clsx";
 import DialogCloseButton from "./components/DialogCloseButton";
 import type { $ElementProps } from "../types";
 import Card, { CardProps } from "../Card";
@@ -38,13 +38,13 @@ export const Dialog: FC<DialogProps> = forwardRef(
         <div className="flex items-center justify-center min-h-screen">
           <DialogPrimitive.Overlay
             {...overlayProps}
-            className={classNames(
+            className={clsx(
               "z-10 fixed inset-0 bg-black/40 backdrop-blur",
               overlayProps?.className
             )}
           />
           <Card
-            className={classNames(
+            className={clsx(
               "z-20 shadow-2xl relative",
               {
                 "p-7": !className.match(/p-/),

@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { forwardRef } from "react";
 import type { ButtonBaseProps } from "@/ButtonBase";
 import { OutlinedButtonBase } from "@/OutlinedButtonBase";
@@ -16,7 +16,7 @@ export const OutlinedIconButton = forwardRef<
       ref={ref}
       size={size}
       color={color}
-      className={classNames(
+      className={clsx(
         iconButtonWidthClassNames(size),
         {
           "hover:text-inherit": color === "primary",

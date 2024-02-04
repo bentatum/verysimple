@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import classNames from "classnames";
+import clsx from "clsx";
 import { ButtonBase, ButtonBaseProps } from "@/ButtonBase";
 import { ButtonColor } from "@/types";
 import {
@@ -36,7 +36,7 @@ export const FilledButtonBase = forwardRef<
         ref={ref}
         size={size}
         disabled={disabled}
-        className={classNames(
+        className={clsx(
           "transition-colors duration-200 ease-in-out",
           buttonTextClassNames(className),
           buttonShadowClassNames("filled", className),

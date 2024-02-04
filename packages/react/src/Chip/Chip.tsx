@@ -1,7 +1,7 @@
 import { fieldPaddingClassNames } from "@/helpers/fieldPaddingClassNames";
 import { fieldSizeClassNames } from "@/helpers/fieldSizeClassNames";
 import { ChipSize } from "@/types";
-import classNames from "classnames";
+import clsx from "clsx";
 import { ComponentPropsWithRef, forwardRef } from "react";
 
 export interface ChipProps extends ComponentPropsWithRef<"div"> {
@@ -13,7 +13,7 @@ export const Chip = forwardRef<HTMLDivElement, ChipProps>(
     return (
       <div
         ref={ref}
-        className={classNames(
+        className={clsx(
           "inline-flex items-center",
           fieldSizeClassNames(size),
           fieldPaddingClassNames(size, className),

@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import classNames from "classnames";
+import clsx from "clsx";
 import ButtonBase, { ButtonBaseProps } from "../ButtonBase";
 import {
   iconButtonWidthClassNames,
@@ -21,7 +21,7 @@ export const NormalIconButton = forwardRef<
       size={size}
       color={color}
       disabled={disabled}
-      className={classNames(
+      className={clsx(
         iconButtonWidthClassNames(size),
         buttonShadowClassNames("normal", className),
         fieldBorderRadiusClassNames(className),

@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { ComponentPropsWithRef, FC, forwardRef, ReactNode } from "react";
 
 export interface DialogActionsProps extends ComponentPropsWithRef<"nav"> {
@@ -13,7 +13,7 @@ export const DialogActions: FC<DialogActionsProps> = forwardRef<
     <nav
       {...props}
       ref={ref}
-      className={classNames(
+      className={clsx(
         "flex items-center space-x-2",
         {
           "pb-4": !className.match(/pb-\d+|p-\d+/),

@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import {
   ComponentPropsWithRef,
   ElementType,
@@ -19,7 +19,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
       <Component
         {...props}
         ref={ref}
-        className={classNames(
+        className={clsx(
           {
             "rounded-lg": !className.includes("rounded-"),
             "my-bg-primary": !className.includes("bg-"),

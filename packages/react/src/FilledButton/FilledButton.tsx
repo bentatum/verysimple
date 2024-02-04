@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import classNames from "classnames";
+import clsx from "clsx";
 import type { ButtonBaseProps } from "@/ButtonBase";
 import type { ButtonColor } from "@/types";
 import { fieldPaddingClassNames } from "@/helpers/fieldPaddingClassNames";
@@ -17,7 +17,7 @@ export const FilledButton = forwardRef<HTMLButtonElement, FilledButtonProps>(
         ref={ref}
         size={size}
         color={color}
-        className={classNames(
+        className={clsx(
           fieldPaddingClassNames(size, className),
           { "text-white": color === "destructive" },
           className

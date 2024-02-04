@@ -10,7 +10,7 @@ import {
 import FormError, { FormErrorProps } from "../FormError";
 import FormLabel, { FormLabelProps } from "../FormLabel";
 import FormHelpText, { FormHelpTextProps } from "../FormHelpText";
-import classNames from "classnames";
+import clsx from "clsx";
 import Textarea from "../Textarea";
 
 export interface TextFieldProps extends ComponentPropsWithRef<any> {
@@ -65,7 +65,7 @@ export const TextField: FC<TextFieldProps> = forwardRef(
     const inlineVariant = labelPosition !== "default";
     return (
       <div
-        className={classNames(
+        className={clsx(
           "inline-block text-left",
           {
             "w-full": fullWidth,
@@ -80,7 +80,7 @@ export const TextField: FC<TextFieldProps> = forwardRef(
             htmlFor={id}
             {...labelProps}
             {...FormLabelProps}
-            className={classNames(
+            className={clsx(
               {
                 "mb-0 whitespace-nowrap": inlineVariant,
                 "mr-3": labelPosition === "left",
@@ -109,7 +109,7 @@ export const TextField: FC<TextFieldProps> = forwardRef(
         />
         {helpText && !inlineVariant && (
           <FormHelpText
-            className={classNames({
+            className={clsx({
               "mt-1": true,
             })}
             {...helpTextProps}
@@ -121,7 +121,7 @@ export const TextField: FC<TextFieldProps> = forwardRef(
           <FormError
             {...errorProps}
             {...FormErrorProps}
-            className={classNames(
+            className={clsx(
               {
                 "mt-0 ml-5": labelPosition === "left",
               },

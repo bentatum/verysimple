@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { ComponentPropsWithRef, ElementType, FC, forwardRef } from "react";
 
 export interface FormHelpTextProps extends ComponentPropsWithRef<"p"> {
@@ -14,7 +14,7 @@ export const FormHelpText: FC<FormHelpTextProps> = forwardRef<
     <Component
       {...props}
       ref={ref}
-      className={classNames(
+      className={clsx(
         "text-xs font-medium text-gray-500 dark:text-gray-300",
         props.className
       )}

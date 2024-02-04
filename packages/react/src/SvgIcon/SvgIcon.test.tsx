@@ -30,7 +30,7 @@ describe("SvgIcon", () => {
     expect(element).toHaveAttribute("viewBox", "0 0 24 24");
   });
 
-  describe("default classNames", () => {
+  describe("default clsx", () => {
     test("shrink-0", () => {
       expect(element).toHaveClass("shrink-0");
     });

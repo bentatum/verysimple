@@ -1,12 +1,12 @@
 import { ButtonColor } from "@/types";
 import { cva } from "class-variance-authority";
-import classNames from "classnames";
+import clsx from "clsx";
 // import { ButtonVariant } from "..";
 
 export const buttonTextClassNames = (
   className: string = ""
 ) => {
-  return classNames(
+  return clsx(
     {
       "whitespace-nowrap": !className.match(/whitespace-/),
       "font-bold": !className.match(
@@ -15,4 +15,4 @@ export const buttonTextClassNames = (
     }
   );
 };
-classNames();
+clsx();

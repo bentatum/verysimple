@@ -1,7 +1,7 @@
 import { Switch as SwitchPrimitive } from "@headlessui/react";
 import { forwardRef } from "react";
 import { ButtonBaseProps } from "../ButtonBase";
-import classNames from "classnames";
+import clsx from "clsx";
 import { cva } from "class-variance-authority";
 
 export interface SwitchProps extends ButtonBaseProps {
@@ -14,7 +14,7 @@ export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(
       <SwitchPrimitive
         {...props}
         ref={ref}
-        className={classNames(
+        className={clsx(
           {
             "bg-primary-500": checked,
             "my-bg-secondary": !checked && !className.includes("bg-"),

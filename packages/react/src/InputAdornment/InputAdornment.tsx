@@ -1,6 +1,6 @@
 import { fieldPaddingClassNames } from "@/helpers/fieldPaddingClassNames";
 import { InputSize } from "@/types";
-import classNames from "classnames";
+import clsx from "clsx";
 import { ComponentPropsWithRef, FC, ElementType, forwardRef } from "react";
 
 export interface InputAdornmentProps extends ComponentPropsWithRef<"div"> {
@@ -21,7 +21,7 @@ export const InputAdornment: FC<InputAdornmentProps> = forwardRef<
     return (
       <Component
         ref={ref}
-        className={classNames(
+        className={clsx(
           "absolute inset-y-0",
           "flex",
           "font-medium whitespace-nowrap",

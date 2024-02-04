@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import classNames from "classnames";
+import clsx from "clsx";
 import { ButtonBaseProps } from "../ButtonBase";
 import { ButtonColor } from "../types";
 import { iconButtonWidthClassNames } from "@/helpers/iconButtonWidthClassNames";
@@ -18,7 +18,7 @@ export const FilledIconButton = forwardRef<
       {...props}
       ref={ref}
       size={size}
-      className={classNames("rounded-full", iconButtonWidthClassNames(size), className)}
+      className={clsx("rounded-full", iconButtonWidthClassNames(size), className)}
     />
   );
 });
