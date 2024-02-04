@@ -1,6 +1,6 @@
 import { Dialog as UIDialog } from "@headlessui/react";
 import { FC, forwardRef, ReactNode } from "react";
-import classNames from "classnames";
+import clsx from "clsx";
 import type { $ElementProps } from "@/types";
 
 export type DialogTitleProps = $ElementProps<typeof UIDialog.Title> & {
@@ -16,7 +16,7 @@ export const DialogTitle: FC<DialogTitleProps> = forwardRef<
     <UIDialog.Title
       {...props}
       ref={ref}
-      className={classNames(
+      className={clsx(
         "font-display font-bold text-2xl pt-6 px-6",
         {
           "flex items-center": Boolean(icon),

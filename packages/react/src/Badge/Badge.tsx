@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { ComponentPropsWithRef, forwardRef, ReactNode } from "react";
 
 export interface BadgeProps extends ComponentPropsWithRef<"div"> {
@@ -30,7 +30,7 @@ export const Badge = forwardRef<HTMLDivElement, BadgeProps>(
         {children}
         {badgeContent && (
           <div
-            className={classNames(
+            className={clsx(
               "absolute z-10",
               !hasOverrides && {
                 "top-0": badgePosition === "top",

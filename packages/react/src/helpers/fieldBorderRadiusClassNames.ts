@@ -1,6 +1,6 @@
-import classNames from "classnames";
+import clsx from "clsx";
 
 export const fieldBorderRadiusClassNames = (className: string) =>
-  classNames({
+  clsx({
     "rounded-2xl": !className.match(/rounded/),
   });

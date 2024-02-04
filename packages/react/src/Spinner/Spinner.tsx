@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { ComponentPropsWithRef, forwardRef } from "react";
 
 export interface SpinnerProps extends ComponentPropsWithRef<"svg"> {}
@@ -13,7 +13,7 @@ export const Spinner = forwardRef<SVGSVGElement, SpinnerProps>(
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          className={classNames(
+          className={clsx(
             "animate-spin",
             {
               "h-5 w-5": !className.match(/h-|w-/),

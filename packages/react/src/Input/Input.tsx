@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import {
   ComponentPropsWithoutRef,
   ComponentPropsWithRef,
@@ -48,7 +48,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     return (
       <div
         {...containerProps}
-        className={classNames(
+        className={clsx(
           "inline-flex items-center overflow-hidden",
           fieldBorderRadiusClassNames(containerClassname),
           {
@@ -65,7 +65,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           <InputComponent
             ref={ref}
             disabled={disabled}
-            className={classNames(
+            className={clsx(
               fieldSizeClassNames(inputSize),
               fieldPaddingClassNames(inputSize, className),
               "focus:outline-none appearance-none",

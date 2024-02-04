@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { shadowTransitionClassNames } from "./shadowTransitionClassNames";
 
 export const buttonShadowClassNames = (
@@ -7,7 +7,7 @@ export const buttonShadowClassNames = (
 ) =>
   className.match(/shadow/)
     ? ""
-    : classNames(
+    : clsx(
         {
           "shadow-sm hover:shadow-md disabled:shadow-none":
             variant === "filled" ||

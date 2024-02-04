@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { ComponentPropsWithRef, ElementType, forwardRef } from "react";
 import Spinner from "../Spinner";
 import { ButtonSize } from "../types";
@@ -30,7 +30,7 @@ export const ButtonBase = forwardRef<HTMLButtonElement, ButtonBaseProps>(
         role={role ?? (Component !== "button" ? "button" : undefined)}
         ref={ref}
         tabIndex={tabIndex}
-        className={classNames(
+        className={clsx(
           "focus:outline-none",
           {
             "pointer-events-none cursor-wait": loading,

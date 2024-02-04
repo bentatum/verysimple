@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { forwardRef } from "react";
 import type { ButtonColor } from "@/types";
 import type { ButtonBaseProps } from "@/ButtonBase";
@@ -34,7 +34,7 @@ export const OutlinedButton = forwardRef<
         {...props}
       >
         <span
-          className={classNames(
+          className={clsx(
             fieldPaddingClassNames(size),
             "w-full flex items-center justify-center",
             // {

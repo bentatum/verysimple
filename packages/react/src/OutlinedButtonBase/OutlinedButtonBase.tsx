@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { FC, forwardRef } from "react";
 import { ButtonBase, ButtonBaseProps } from "@/ButtonBase";
 import { GradientBorderProps } from "@/GradientBorder";
@@ -38,7 +38,7 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
         size={size}
         as={as}
         disabled={disabled}
-        className={classNames(
+        className={clsx(
           // this keeps the size consistent with inputs
           "box-content",
           "border",

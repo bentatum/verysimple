@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { forwardRef } from "react";
 import { ButtonBase, ButtonBaseProps } from "@/ButtonBase";
 import {
@@ -32,7 +32,7 @@ export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
           ref={ref}
           color={color}
           onClick={handleClick}
-          className={classNames(
+          className={clsx(
             "relative overflow-auto",
             "transition-colors duration-200 ease-in-out",
             "hover:bg-opacity-20 active:bg-opacity-20 focus:bg-opacity-20",

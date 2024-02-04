@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { ComponentPropsWithRef, ElementType, FC, forwardRef } from "react";
 
 export interface FormLabelProps extends ComponentPropsWithRef<"label"> {
@@ -12,7 +12,7 @@ export const FormLabel: FC<FormLabelProps> = forwardRef(
       <Component
         {...props}
         ref={ref}
-        className={classNames(
+        className={clsx(
           "block",
           {
             "text-sm": !className?.includes("text-"),

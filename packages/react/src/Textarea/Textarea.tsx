@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import clsx from "clsx";
 import { forwardRef } from "react";
 import Input, { InputProps } from "../Input";
 
@@ -11,7 +11,7 @@ export const Textarea = forwardRef<HTMLInputElement, TextareaProps>(
         ref={ref}
         {...props}
         as="textarea"
-        className={classNames("block p-2", props.className)}
+        className={clsx("block p-2", props.className)}
       />
     );
   }

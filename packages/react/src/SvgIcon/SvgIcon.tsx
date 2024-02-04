@@ -1,5 +1,5 @@
 import { ComponentPropsWithRef, forwardRef } from "react";
-import classNames from "classnames";
+import clsx from "clsx";
 
 export interface SvgIconProps extends ComponentPropsWithRef<"svg"> {}
 
@@ -10,7 +10,7 @@ export const SvgIcon = forwardRef<SVGSVGElement, SvgIconProps>(
         ref={ref}
         viewBox="0 0 24 24"
         aria-hidden="true"
-        className={classNames(
+        className={clsx(
           "shrink-0",
           {
             "fill-current": !className?.includes("fill-"),
