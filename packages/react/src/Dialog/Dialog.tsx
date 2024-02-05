@@ -50,6 +50,7 @@ export const Dialog: FC<DialogProps> = forwardRef(
                 "p-7": !className.match(/p-/),
                 "m-7": !className.match(/m-/),
                 "w-full max-w-prose": !className.match(/w-|max-w-/),
+                "my-bg-primary": !className.match(/bg-/),
               },
               className
             )}
