@@ -1,5 +1,11 @@
 # Change Log
 
+## 6.0.3
+
+### Patch Changes
+
+- 41d38c4: fix: incorrect field padding and dialog card background
+
 ## 6.0.2
 
 ### Patch Changes
