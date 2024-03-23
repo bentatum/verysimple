@@ -1,5 +1,11 @@
 # Change Log
 
+## 6.0.4
+
+### Patch Changes
+
+- 304c96c: fix: text button click handler was broken :D
+
 ## 6.0.3
 
 ### Patch Changes
