@@ -49,7 +49,12 @@ const Ripple = React.forwardRef<HTMLDivElement, RippleProps>(
       children,
       {
         ref: ref,
-        onClick: createRipple,
+        onClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+          createRipple(e); // Call the ripple effect function
+          if (children.props.onClick) {
+            children.props.onClick(e); // Call the original click handler if it exists
+          }
+        },
         style: { position: "relative", ...children.props.style },
       },
       [
