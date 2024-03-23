@@ -20,7 +20,6 @@ const Ripple = React.forwardRef<HTMLDivElement, RippleProps>(
     const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     const createRipple = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-      console.log("clicked!");
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
