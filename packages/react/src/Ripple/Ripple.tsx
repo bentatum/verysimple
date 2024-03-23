@@ -13,18 +13,18 @@ interface RippleProps {
   children: ReactElement; // Expecting a single React element
 }
 
-const Ripple = React.forwardRef<HTMLDivElement, RippleProps>(
+const Ripple = React.forwardRef<HTMLButtonElement, RippleProps>(
   ({ children }, ref) => {
     const [coords, setCoords] = useState({ x: -1, y: -1 });
     const [rippleKey, setRippleKey] = useState(0);
     const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-    const createRipple = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const createRipple = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
 
-      const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
+      const rect = (e.currentTarget as HTMLButtonElement).getBoundingClientRect();
       const x = e.clientX - rect.left - rippleSize / 2;
       const y = e.clientY - rect.top - rippleSize / 2;
 
@@ -49,7 +49,7 @@ const Ripple = React.forwardRef<HTMLDivElement, RippleProps>(
       children,
       {
         ref: ref,
-        onClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
           createRipple(e); // Call the ripple effect function
           if (children.props.onClick) {
             children.props.onClick(e); // Call the original click handler if it exists

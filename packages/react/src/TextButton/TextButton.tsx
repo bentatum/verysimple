@@ -17,16 +17,9 @@ export interface TextButtonProps extends ButtonBaseProps {
 
 export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
   (
-    { className = "", size = "md", color = "neutral", children, onClick, ...props },
+    { className = "", size = "md", color = "neutral", children, ...props },
     ref
   ) => {
-    const handleClick = (e: any) => {
-      console.log("TextButton clicked");
-      if (onClick) {
-        onClick(e);
-      }
-    };
-
     const hasColorOverride = /text-/.test(className);
 
     const colors = {
@@ -38,13 +31,11 @@ export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
     };
 
     return (
-      <Ripple>
+      <Ripple ref={ref}>
         <ButtonBase
           {...props}
           size={size}
-          ref={ref}
           color={color}
-          onClick={handleClick}
           className={clsx(
             "relative overflow-auto",
             "transition-colors duration-200 ease-in-out",
