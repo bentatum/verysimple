@@ -23,5 +23,11 @@ describe("TextButton", () => {
   it("renders a ripple", () => {
     render(<TextButton>test</TextButton>);
     expect(screen.getByTestId("mock-ripple")).toBeInTheDocument();
-  })
+  });
+  it("handles click events", () => {
+    const handleClick = jest.fn();
+    render(<TextButton onClick={handleClick}>Click me</TextButton>);
+    screen.getByText("Click me").click();
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
 });
