@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { FC, forwardRef } from "react";
 import { ButtonBase, ButtonBaseProps } from "@/ButtonBase";
-import { GradientBorderProps } from "@/GradientBorder";
 import type { ButtonColor } from "@/types";
 import {
   buttonShadowClassNames,
@@ -9,11 +8,16 @@ import {
   fieldSizeClassNames,
   fieldBorderRadiusClassNames,
 } from "@/helpers";
-import { cva } from "class-variance-authority";
 
 export interface OutlinedButtonBaseProps extends ButtonBaseProps {
   color?: ButtonColor;
 }
+
+const colorClasses = {
+  neutral: "my-border",
+  primary: "border-primary-500 text-primary-500",
+  destructive: "border-red-500 disabled:border-red-400 text-red-500",
+};
 
 export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
   HTMLButtonElement,
@@ -31,6 +35,7 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
     },
     ref
   ) => {
+    const hasBorderColor = className.includes("border-");
     return (
       <ButtonBase
         {...props}
@@ -46,17 +51,7 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
           buttonTextClassNames(className),
           fieldBorderRadiusClassNames(className),
           fieldSizeClassNames(size),
-          cva([], {
-            variants: {
-              color: !className.match(/border/)
-                ? {
-                    neutral: "my-border",
-                    primary: "border-primary-500 text-primary-500",
-                    destructive: "border-red-500 disabled:border-red-400 text-red-500",
-                  }
-                : {},
-            },
-          })({ color }),
+          !hasBorderColor && colorClasses[color],
           className
         )}
       />

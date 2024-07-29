@@ -1,7 +1,4 @@
-import { ButtonColor } from "@/types";
-import { cva } from "class-variance-authority";
 import clsx from "clsx";
-// import { ButtonVariant } from "..";
 
 export const buttonTextClassNames = (
   className: string = ""
@@ -15,4 +12,3 @@ export const buttonTextClassNames = (
     }
   );
 };
-clsx();
