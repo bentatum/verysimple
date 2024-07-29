@@ -15,15 +15,16 @@ export interface CardProps
 export const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ as = "div", children, className = "", ...props }, ref) => {
     const Component = as;
+    console.log("card", className);
     return (
       <Component
         {...props}
         ref={ref}
         className={clsx(
           {
-            "rounded-lg": !className.includes("rounded-"),
-            "my-bg-secondary": !className.includes("bg-"),
-            "shadow": !className.includes("shadow-"),
+            "rounded-lg": !className.match(/rounded/gi),
+            "my-bg-secondary": !className.match(/bg-/gi),
+            "shadow": !className.match(/shadow-/gi),
           },
           className
         )}

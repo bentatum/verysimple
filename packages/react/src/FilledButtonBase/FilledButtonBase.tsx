@@ -8,11 +8,16 @@ import {
   fieldSizeClassNames,
   fieldBorderRadiusClassNames,
 } from "@/helpers";
-import { cva } from "class-variance-authority";
 
 export interface FilledButtonBaseProps extends ButtonBaseProps {
   color?: ButtonColor;
 }
+
+const colorClasses = {
+  neutral: "my-bg-secondary",
+  primary: "bg-primary-500 text-primaryoffset",
+  destructive: "bg-red-500 disabled:bg-red-400 disabled:text-white",
+};
 
 export const FilledButtonBase = forwardRef<
   HTMLButtonElement,
@@ -42,19 +47,7 @@ export const FilledButtonBase = forwardRef<
           buttonShadowClassNames("filled", className),
           fieldSizeClassNames(size),
           fieldBorderRadiusClassNames(className),
-          cva([], {
-            variants: {
-              color: {
-                neutral: "my-bg-secondary",
-                primary: "bg-primary-500 text-primaryoffset",
-                destructive:
-                  "bg-red-500 disabled:bg-red-400 disabled:text-white",
-              },
-            },
-            defaultVariants: {
-              color: "neutral",
-            },
-          })({ color }),
+          !hasBgColor && colorClasses[color],
           className
         )}
       >

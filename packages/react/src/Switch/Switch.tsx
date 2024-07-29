@@ -2,7 +2,6 @@ import { Switch as SwitchPrimitive } from "@headlessui/react";
 import { forwardRef } from "react";
 import { ButtonBaseProps } from "../ButtonBase";
 import clsx from "clsx";
-import { cva } from "class-variance-authority";
 
 export interface SwitchProps extends ButtonBaseProps {
   checked?: boolean;
