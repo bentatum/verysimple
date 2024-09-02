@@ -1,7 +1,7 @@
 import { ElementSize } from "@/types";
 
 const sizeClasses = {
-  xs: "px-2",
+  xs: "px-2.5",
   sm: "px-3",
   md: "px-4",
   lg: "px-5",

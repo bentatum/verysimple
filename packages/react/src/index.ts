@@ -20,6 +20,7 @@ export * from "./OutlinedButton";
 export * from "./OutlinedButtonBase";
 export * from "./OutlinedIconButton";
 export * from "./Ripple";
+export * from "./Select";
 export * from "./Spinner";
 export * from "./SvgIcon";
 export * from "./Switch";
