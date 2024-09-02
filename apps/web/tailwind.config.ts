@@ -47,7 +47,7 @@ const config: Config = {
       addBase({
         ":root": {
           "--my-bg-primary": theme("colors.white"),
-          "--my-bg-secondary": theme("colors.gray.200"),
+          "--my-bg-secondary": theme("colors.gray.100"),
           "--my-border": theme("colors.gray.300"),
           "--my-border-disabled": theme("colors.gray.300"),
         },

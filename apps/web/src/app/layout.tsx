@@ -43,7 +43,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={classNames(inter.className, "antialiased my-bg-primary text-black dark:text-white")}>
-        <AppProvider><Layout>{children}</Layout></AppProvider>
+        <AppProvider>
+          <Layout>{children}</Layout>
+        </AppProvider>
       </body>
     </html>
   );

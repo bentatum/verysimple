@@ -15,7 +15,6 @@ export interface CardProps
 export const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ as = "div", children, className = "", ...props }, ref) => {
     const Component = as;
-    console.log("card", className);
     return (
       <Component
         {...props}

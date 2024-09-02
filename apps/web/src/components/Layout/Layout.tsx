@@ -123,12 +123,12 @@ const LayoutWithMenuStateProps = ({ children, menuOpen, closeMenu }: any) => {
           </Link>
           <div className="flex items-center gap-2">
             <CopyToClipboardButton
-              size="xs"
+              size="sm"
               variant="filled"
               text="yarn add @verysimple/react"
               className="hidden sm:inline-flex"
             />
-            <IconButton variant="filled" size="xs" onClick={() => {
+            <IconButton variant="filled" size="sm" onClick={() => {
               setTheme(resolvedTheme === "dark" ? "light" : "dark")
             }}>
               {resolvedTheme === "light" ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}

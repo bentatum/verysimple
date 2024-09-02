@@ -1,12 +1,13 @@
 "use client";
 
-import { Button, Chip, Badge } from "@verysimple/react";
+import { Button, Chip, Badge, TextField } from "@verysimple/react";
 import CopyToClipboardButton from "../CopyToClipboardButton";
 import classNames from "classnames";
 import ComponentDisplayCard from "../ComponentDisplayCard";
 import Link from "next/link";
 import { InteractiveDemo as SwitchInteractiveDemo } from "../SwitchPage";
 import { InteractiveDemo as InputInteractiveDemo } from "../InputPage";
+import { InteractiveDemo as SelectInteractiveDemo } from "../SelectPage";
 import { Card } from "@verysimple/react";
 
 const ComponentDisplayCardTitle: React.FC<any> = ({ className, children }) => {
@@ -82,7 +83,7 @@ const HomePage = () => {
     //       id="textfield-demo"
     //       label="Greetings"
     //       placeholder="Type here..."
-    //       helpText="uh oh, help!"
+    //       helpText="hello"
     //     />
     //   ),
     // },
@@ -90,6 +91,11 @@ const HomePage = () => {
       href: "/components/input",
       title: "Input",
       children: <InputInteractiveDemo />,
+    },
+    {
+      href: "/components/select",
+      title: "Select",
+      children: <SelectInteractiveDemo />,
     },
     {
       href: "/components/switch",
@@ -134,15 +140,15 @@ const HomePage = () => {
 
         <Section className="">
           <div className="px-5 max-w-screen-xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {componentCards.map((card, index) => (
-              <Link href={card.href} key={index}>
-                <ComponentDisplayCard>
+            {componentCards.map((card) => (
+              <ComponentDisplayCard key={card.href}>
+                <Link href={card.href}>
                   <ComponentDisplayCardTitle>
                     {card.title}
                   </ComponentDisplayCardTitle>
-                  {card.children}
-                </ComponentDisplayCard>
-              </Link>
+                </Link>
+                {card.children}
+              </ComponentDisplayCard>
             ))}
           </div>
         </Section>
