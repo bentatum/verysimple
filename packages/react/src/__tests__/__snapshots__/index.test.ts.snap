@@ -35,6 +35,7 @@ exports[`top level exports matches snapshot 1`] = `
   "OutlinedButton",
   "OutlinedButtonBase",
   "OutlinedIconButton",
+  "Select",
   "Spinner",
   "SvgIcon",
   "Switch",
