@@ -1,5 +1,11 @@
 # Change Log
 
+## 6.1.0
+
+### Minor Changes
+
+- fba4b75: feature: select
+
 ## 6.0.5
 
 ### Patch Changes
