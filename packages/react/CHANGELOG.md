@@ -1,5 +1,11 @@
 # Change Log
 
+## 6.2.0
+
+### Minor Changes
+
+- c80c224: feature: textarea
+
 ## 6.1.0
 
 ### Minor Changes
