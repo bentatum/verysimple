@@ -24,6 +24,7 @@ export * from "./Select";
 export * from "./Spinner";
 export * from "./SvgIcon";
 export * from "./Switch";
+export * from "./Textarea";
 export * from "./TextButton";
 export * from "./TextField";
 export * from "./types";

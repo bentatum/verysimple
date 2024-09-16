@@ -39,6 +39,7 @@ exports[`top level exports matches snapshot 1`] = `
   "Spinner",
   "SvgIcon",
   "Switch",
+  "Textarea",
   "TextButton",
   "TextField",
 ]
