@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.0.0
+
+### Major Changes
+
+- 23d5363: feature: improved configuration
+
 ## 6.2.0
 
 ### Minor Changes
