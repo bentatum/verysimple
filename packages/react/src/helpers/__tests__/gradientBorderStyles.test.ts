@@ -4,7 +4,7 @@ describe("gradientBorderStyles", () => {
   it("should return the correct styles", () => {
     const styles = gradientBorderStyles();
     expect(styles.background).toContain(
-      "linear-gradient(var(--my-bg-primary), var(--my-bg-primary)) 0 0 / 100% 100% no-repeat"
+      "linear-gradient(var(--bg-background), var(--bg-background)) 0 0 / 100% 100% no-repeat"
     );
     expect(styles.background).toContain(
       "linear-gradient(to right, var(--my-gradient-start) 0%, var(--my-gradient-stop) 100%)"

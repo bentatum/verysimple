@@ -16,7 +16,7 @@ export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(
         className={clsx(
           {
             "bg-primary-500": checked,
-            "my-bg-secondary": !checked && !className.includes("bg-"),
+            "bg-foreground": !checked && !className.includes("bg-"),
           },
           "p-1 relative inline-flex items-center w-12 h-7 rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none",
           className
@@ -25,7 +25,7 @@ export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(
         <span
           className={`${
             checked ? "translate-x-5" : "translate-x-0"
-          } inline-block h-5 w-5 transform rounded-full my-bg-primary transition`}
+          } inline-block h-5 w-5 transform rounded-full bg-background transition`}
         />
       </SwitchPrimitive>
     );

@@ -16,6 +16,8 @@ export * from "./IconButton";
 export * from "./Input";
 export * from "./InputAdornment";
 export * from "./NormalIconButton";
+export * from "./Notification";
+export * from "./NotificationContext";
 export * from "./OutlinedButton";
 export * from "./OutlinedButtonBase";
 export * from "./OutlinedIconButton";

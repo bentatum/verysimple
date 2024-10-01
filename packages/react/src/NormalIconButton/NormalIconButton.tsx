@@ -5,7 +5,6 @@ import {
   iconButtonWidthClassNames,
   buttonShadowClassNames,
   fieldSizeClassNames,
-  fieldBorderRadiusClassNames,
 } from "@/helpers";
 
 export interface NormalIconButtonProps extends ButtonBaseProps {}
@@ -22,9 +21,9 @@ export const NormalIconButton = forwardRef<
       color={color}
       disabled={disabled}
       className={clsx(
+        'rounded',
         iconButtonWidthClassNames(size),
         buttonShadowClassNames("normal", className),
-        fieldBorderRadiusClassNames(className),
         fieldSizeClassNames(size),
         {
           "focus:bg-gray-300/20 hover:bg-gray-300/20 active:bg-gray-300/20":

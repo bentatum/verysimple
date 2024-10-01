@@ -50,7 +50,7 @@ describe("Input", () => {
     expect(container.firstChild).not.toHaveStyle({
       backgroundClip: "content-box, border-box",
       background:
-        "linear-gradient(var(--my-bg-primary), var(--my-bg-primary)) 0 0 / 100% 100% no-repeat, linear-gradient(to right, var(--my-gradient-start) 0%, var(--my-gradient-stop) 100%)",
+        "linear-gradient(var(--bg-background), var(--bg-background)) 0 0 / 100% 100% no-repeat, linear-gradient(to right, var(--my-gradient-start) 0%, var(--my-gradient-stop) 100%)",
       padding: "1px",
     });
     expect(container).toMatchSnapshot();

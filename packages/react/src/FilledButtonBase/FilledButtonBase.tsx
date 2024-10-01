@@ -6,7 +6,6 @@ import {
   buttonTextClassNames,
   buttonShadowClassNames,
   fieldSizeClassNames,
-  fieldBorderRadiusClassNames,
 } from "@/helpers";
 
 export interface FilledButtonBaseProps extends ButtonBaseProps {
@@ -14,7 +13,7 @@ export interface FilledButtonBaseProps extends ButtonBaseProps {
 }
 
 const colorClasses = {
-  neutral: "my-bg-secondary",
+  neutral: "bg-foreground",
   primary: "bg-primary-500 text-primaryoffset",
   destructive: "bg-red-500 disabled:bg-red-400 disabled:text-white",
 };
@@ -42,11 +41,11 @@ export const FilledButtonBase = forwardRef<
         size={size}
         disabled={disabled}
         className={clsx(
+          'rounded',
           "transition-colors duration-200 ease-in-out",
           buttonTextClassNames(className),
           buttonShadowClassNames("filled", className),
           fieldSizeClassNames(size),
-          fieldBorderRadiusClassNames(className),
           !hasBgColor && colorClasses[color],
           className
         )}

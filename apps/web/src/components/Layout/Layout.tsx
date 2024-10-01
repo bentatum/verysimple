@@ -110,7 +110,7 @@ const LayoutWithMenuStateProps = ({ children, menuOpen, closeMenu }: any) => {
 
   return (
     <>
-      <header className="w-full z-50 shadow my-bg-primary">
+      <header className="w-full z-50 shadow bg-background">
         <div className="mx-auto max-w-screen-xl h-20 flex items-center justify-between px-5">
           <Link href="/">
             {" "}
@@ -149,7 +149,7 @@ const LayoutWithMenuStateProps = ({ children, menuOpen, closeMenu }: any) => {
         </div>
       </header>
       {isMd ? (
-        <MenuItems className="absolute w-64 mt-2 top-12 right-5 z-30 my-bg-secondary shadow rounded py-3" />
+        <MenuItems className="absolute w-64 mt-2 top-12 right-5 z-30 bg-foreground shadow rounded py-3" />
       ) : (
         <MenuItems className="z-40 fixed top-0 w-screen h-screen pt-24 bg-white/80 dark:bg-gray-900/90 backdrop-blur-lg left-0 p-2" />
       )}

@@ -3,7 +3,7 @@
 exports[`OutlinedIconButton should have an outline 1`] = `
 <div>
   <button
-    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center box-content border shadow-sm hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 whitespace-nowrap font-bold rounded-2xl text-base min-h-[44px] my-border min-w-[48px]"
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center rounded border shadow-sm hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 whitespace-nowrap font-bold text-base min-h-[44px] my-border box-content min-w-[48px]"
     tabindex="0"
   >
     Test

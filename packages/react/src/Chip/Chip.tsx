@@ -19,7 +19,7 @@ export const Chip = forwardRef<HTMLDivElement, ChipProps>(
           fieldPaddingClassNames(size, className),
           {
             "font-semibold": !className.includes("font-"),
-            "my-bg-secondary": !className.includes("bg-"),
+            "bg-foreground": !className.includes("bg-"),
             "rounded-full": !className.includes("rounded-")
           },
           className
