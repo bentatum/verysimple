@@ -19,7 +19,7 @@ const config: Config = {
         twinkle: {
           "0%": { opacity: "0" },
           "50%": { opacity: "1" },
-          "100%": { opacity: "0" }``,
+          "100%": { opacity: "0" },
         },
         typing: {
           '0%': { width: '0%' },

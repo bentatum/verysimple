@@ -6,7 +6,6 @@ import {
   buttonShadowClassNames,
   buttonTextClassNames,
   fieldSizeClassNames,
-  fieldBorderRadiusClassNames,
 } from "@/helpers";
 
 export interface OutlinedButtonBaseProps extends ButtonBaseProps {

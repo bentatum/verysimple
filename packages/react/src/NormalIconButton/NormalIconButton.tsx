@@ -5,7 +5,6 @@ import {
   iconButtonWidthClassNames,
   buttonShadowClassNames,
   fieldSizeClassNames,
-  fieldBorderRadiusClassNames,
 } from "@/helpers";
 
 export interface NormalIconButtonProps extends ButtonBaseProps {}

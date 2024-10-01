@@ -6,7 +6,6 @@ import {
   buttonTextClassNames,
   buttonShadowClassNames,
   fieldSizeClassNames,
-  fieldBorderRadiusClassNames,
 } from "@/helpers";
 
 export interface FilledButtonBaseProps extends ButtonBaseProps {
