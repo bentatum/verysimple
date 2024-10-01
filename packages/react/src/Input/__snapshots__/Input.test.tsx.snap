@@ -3,13 +3,13 @@
 exports[`Input should not have a gradient border if disable focus style is true 1`] = `
 <div>
   <div
-    class="inline-flex items-center overflow-hidden rounded-2xl border my-border transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
+    class="rounded inline-flex items-center overflow-hidden border my-border transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
   >
     <div
       class="w-full relative inline-flex items-center"
     >
       <input
-        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
+        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed bg-background text-left dark:text-white dark:disabled:text-gray-300 text-black"
       />
     </div>
   </div>
@@ -19,13 +19,13 @@ exports[`Input should not have a gradient border if disable focus style is true 
 exports[`Input should not have a gradient border if disable focus style is true 2`] = `
 <div>
   <div
-    class="inline-flex items-center overflow-hidden rounded-2xl border my-border transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
+    class="rounded inline-flex items-center overflow-hidden border my-border transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
   >
     <div
       class="w-full relative inline-flex items-center"
     >
       <input
-        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
+        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed bg-background text-left dark:text-white dark:disabled:text-gray-300 text-black"
       />
     </div>
   </div>
@@ -35,13 +35,13 @@ exports[`Input should not have a gradient border if disable focus style is true 
 exports[`Input should not have shadow classnames when disabled 1`] = `
 <div>
   <div
-    class="inline-flex items-center overflow-hidden rounded-2xl border my-border"
+    class="rounded inline-flex items-center overflow-hidden border my-border"
   >
     <div
       class="w-full relative inline-flex items-center"
     >
       <input
-        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
+        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed bg-background text-left dark:text-white dark:disabled:text-gray-300 text-black"
         disabled=""
       />
     </div>
@@ -52,13 +52,13 @@ exports[`Input should not have shadow classnames when disabled 1`] = `
 exports[`Input should render 1`] = `
 <div>
   <div
-    class="inline-flex items-center overflow-hidden rounded-2xl border my-border transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
+    class="rounded inline-flex items-center overflow-hidden border my-border transition-shadow ease-in duration-100 shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none"
   >
     <div
       class="w-full relative inline-flex items-center"
     >
       <input
-        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed my-bg-primary text-left dark:text-white dark:disabled:text-gray-300 text-black"
+        class="text-base min-h-[44px] px-4 focus:outline-none appearance-none placeholder-gray-400 disabled:bg-gray-200 dark:disabled:bg-gray-600 disabled:cursor-not-allowed bg-background text-left dark:text-white dark:disabled:text-gray-300 text-black"
       />
     </div>
   </div>

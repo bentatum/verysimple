@@ -11,13 +11,13 @@ describe("Card", () => {
     test("rounded", () => {
       render(<Card as="button">Card</Card>);
       expect(screen.getByRole("button", { name: "Card" })).toHaveClass(
-        "rounded-lg"
+        "rounded bg-foreground shadow"
       );
     });
     test("background", () => {
       render(<Card as="button">Card</Card>);
       expect(screen.getByRole("button", { name: "Card" })).toHaveClass(
-        "my-bg-secondary"
+        "bg-foreground"
       );
     });
   });

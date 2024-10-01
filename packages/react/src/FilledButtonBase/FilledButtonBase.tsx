@@ -14,7 +14,7 @@ export interface FilledButtonBaseProps extends ButtonBaseProps {
 }
 
 const colorClasses = {
-  neutral: "my-bg-secondary",
+  neutral: "bg-foreground",
   primary: "bg-primary-500 text-primaryoffset",
   destructive: "bg-red-500 disabled:bg-red-400 disabled:text-white",
 };

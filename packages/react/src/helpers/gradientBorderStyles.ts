@@ -10,7 +10,7 @@ export interface GradientBorderStylesOptions {
 
 export const gradientBorderStyles = ({
   borderSize = 1,
-  backgroundColor: bg = "var(--my-bg-primary)",
+  backgroundColor: bg = "var(--bg-background)",
   direction: dir = "right",
   startColor = "var(--my-gradient-start)",
   stopColor = "var(--my-gradient-stop)",

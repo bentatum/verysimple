@@ -1,3 +1,4 @@
+import { fieldBorderRadiusClassNames } from "@/helpers";
 import clsx from "clsx";
 import {
   ComponentPropsWithRef,
@@ -20,9 +21,9 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
         {...props}
         ref={ref}
         className={clsx(
+          fieldBorderRadiusClassNames(className),
           {
-            "rounded-lg": !className.match(/rounded/gi),
-            "my-bg-secondary": !className.match(/bg-/gi),
+            "bg-foreground": !className.match(/bg-/gi),
             "shadow": !className.match(/shadow-/gi),
           },
           className

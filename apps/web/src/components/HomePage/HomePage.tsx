@@ -58,7 +58,7 @@ const HomePage = () => {
         <Badge
           badgeContent={<div className="h-3 w-3 bg-green-500 rounded-full" />}
         >
-          <Card className="my-bg-secondary h-10 w-20" />
+          <Card className="bg-foreground h-10 w-20" />
         </Badge>
       ),
     },

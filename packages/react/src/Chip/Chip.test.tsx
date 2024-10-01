@@ -14,12 +14,12 @@ describe("Chip", () => {
   });
   test("default background", () => {
     const { container } = render(<Chip>test</Chip>);
-    expect(container.firstChild).toHaveClass("my-bg-secondary");
+    expect(container.firstChild).toHaveClass("bg-foreground");
   });
   test("override background", () => {
     const { container } = render(<Chip className="bg-red-500">test</Chip>);
     expect(container.firstChild).toHaveClass("bg-red-500");
-    expect(container.firstChild).not.toHaveClass("my-bg-secondary");
+    expect(container.firstChild).not.toHaveClass("bg-foreground");
   });
   test("default text size", () => {
     const { container } = render(<Chip>test</Chip>);

@@ -19,7 +19,7 @@ const config: Config = {
         twinkle: {
           "0%": { opacity: "0" },
           "50%": { opacity: "1" },
-          "100%": { opacity: "0" },
+          "100%": { opacity: "0" }``,
         },
         typing: {
           '0%': { width: '0%' },
@@ -46,14 +46,14 @@ const config: Config = {
     function ({ addBase, addUtilities, theme }: any) {
       addBase({
         ":root": {
-          "--my-bg-primary": theme("colors.white"),
-          "--my-bg-secondary": theme("colors.gray.100"),
+          "--bg-background": theme("colors.white"),
+          "--bg-foreground": theme("colors.gray.100"),
           "--my-border": theme("colors.gray.300"),
           "--my-border-disabled": theme("colors.gray.300"),
         },
         ":root.dark": {
-          "--my-bg-primary": theme("colors.black"),
-          "--my-bg-secondary": theme("colors.gray.900"),
+          "--bg-background": theme("colors.black"),
+          "--bg-foreground": theme("colors.gray.900"),
           "--my-border": theme("colors.gray.700"),
           "--my-border-disabled": theme("colors.gray.700"),
         },
@@ -63,11 +63,11 @@ const config: Config = {
         ".my-border": {
           borderColor: "var(--my-border)",
         },
-        ".my-bg-primary": {
-          backgroundColor: "var(--my-bg-primary)",
+        ".bg-background": {
+          backgroundColor: "var(--bg-background)",
         },
-        ".my-bg-secondary": {
-          backgroundColor: "var(--my-bg-secondary)",
+        ".bg-foreground": {
+          backgroundColor: "var(--bg-foreground)",
         },
       });
     },

@@ -3,7 +3,7 @@
 exports[`FilledIconButton should be fully rounded 1`] = `
 <div>
   <button
-    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center transition-colors duration-200 ease-in-out whitespace-nowrap font-bold shadow-sm hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 text-base min-h-[44px] my-bg-secondary rounded-full min-w-[48px]"
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center transition-colors duration-200 ease-in-out whitespace-nowrap font-bold shadow-sm hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 text-base min-h-[44px] bg-foreground rounded-full min-w-[48px]"
     tabindex="0"
   >
     Test
