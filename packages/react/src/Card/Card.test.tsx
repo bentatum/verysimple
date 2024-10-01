@@ -11,7 +11,7 @@ describe("Card", () => {
     test("rounded", () => {
       render(<Card as="button">Card</Card>);
       expect(screen.getByRole("button", { name: "Card" })).toHaveClass(
-        "rounded bg-foreground shadow"
+        "rounded"
       );
     });
     test("background", () => {
@@ -45,7 +45,7 @@ describe("Card", () => {
         "rounded-sm"
       );
       expect(screen.getByRole("button", { name: "Card" })).not.toHaveClass(
-        "rounded-lg"
+        "rounded"
       );
     });
     test("background", () => {
