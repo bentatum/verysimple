@@ -6,7 +6,6 @@ import {
   fieldPaddingClassNames,
   buttonShadowClassNames,
   fieldSizeClassNames,
-  fieldBorderRadiusClassNames,
 } from "@/helpers";
 import Ripple from "@/Ripple";
 import { ButtonColor } from "..";
@@ -37,14 +36,13 @@ export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
           size={size}
           color={color}
           className={clsx(
-            "relative overflow-auto",
+            "relative overflow-auto rounded",
             "transition-colors duration-200 ease-in-out",
             "hover:bg-opacity-20 active:bg-opacity-20 focus:bg-opacity-20",
             buttonTextClassNames(className),
             fieldPaddingClassNames(size, className),
             buttonShadowClassNames("text", className),
             fieldSizeClassNames(size, className),
-            fieldBorderRadiusClassNames(className),
             !hasColorOverride && colors[color],
             className
           )}

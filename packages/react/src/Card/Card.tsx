@@ -21,10 +21,10 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
         {...props}
         ref={ref}
         className={clsx(
-          fieldBorderRadiusClassNames(className),
           {
             "bg-foreground": !className.match(/bg-/gi),
             "shadow": !className.match(/shadow-/gi),
+            "rounded": !className.match(/rounded/gi),
           },
           className
         )}

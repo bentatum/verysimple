@@ -21,7 +21,6 @@ exports[`top level exports matches snapshot 1`] = `
   "GradientBorder",
   "buttonShadowClassNames",
   "buttonTextClassNames",
-  "fieldBorderRadiusClassNames",
   "fieldPaddingClassNames",
   "fieldSizeClassNames",
   "gradientBorderStyles",

@@ -42,11 +42,11 @@ export const FilledButtonBase = forwardRef<
         size={size}
         disabled={disabled}
         className={clsx(
+          'rounded',
           "transition-colors duration-200 ease-in-out",
           buttonTextClassNames(className),
           buttonShadowClassNames("filled", className),
           fieldSizeClassNames(size),
-          fieldBorderRadiusClassNames(className),
           !hasBgColor && colorClasses[color],
           className
         )}

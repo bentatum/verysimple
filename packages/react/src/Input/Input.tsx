@@ -10,7 +10,6 @@ import { fieldPaddingClassNames } from "@/helpers/fieldPaddingClassNames";
 import { shadowTransitionClassNames } from "@/helpers/shadowTransitionClassNames";
 import { InputSize } from "@/types";
 import { fieldSizeClassNames } from "@/helpers/fieldSizeClassNames";
-import { fieldBorderRadiusClassNames } from "@/helpers/fieldBorderRadiusClassNames";
 
 export interface InputContainerProps extends ComponentPropsWithoutRef<"div"> {}
 
@@ -45,14 +44,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     const InputComponent = as;
     const containerClassname = containerProps?.className || "";
     const fullWidth = className.includes("w-full");
-    const borderRadiusClass = fieldBorderRadiusClassNames(containerClassname);
-    console.log({ borderRadiusClass, containerClassname });
     return (
       <div
         {...containerProps}
         className={clsx(
           "rounded inline-flex items-center overflow-hidden",
-          // borderRadiusClass,
           {
             "border my-border": !containerClassname.includes("border-"),
             "w-full": fullWidth,

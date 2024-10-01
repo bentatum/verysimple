@@ -44,14 +44,13 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
         as={as}
         disabled={disabled}
         className={clsx(
-          // this keeps the size consistent with inputs
-          "box-content",
-          "border",
+          'rounded border',
           buttonShadowClassNames("outlined", className),
           buttonTextClassNames(className),
-          fieldBorderRadiusClassNames(className),
           fieldSizeClassNames(size),
           !hasBorderColor && colorClasses[color],
+          // this keeps the size consistent with inputs
+          "box-content",
           className
         )}
       />
