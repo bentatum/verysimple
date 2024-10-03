@@ -9,7 +9,7 @@ export const buttonShadowClassNames = (
     ? ""
     : clsx(
         {
-          "shadow-sm hover:shadow-md disabled:shadow-none":
+          "shadow hover:shadow disabled:shadow-none":
             variant === "filled" ||
             variant === "outlined" ||
             variant === "normal",
