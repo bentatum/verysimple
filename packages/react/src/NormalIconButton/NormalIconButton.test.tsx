@@ -7,9 +7,9 @@ describe("NormalIconButton", () => {
     render(<NormalIconButton />);
     expect(screen.getByRole("button")).toHaveClass("min-w-[48px]");
   });
-  it("should have button shadows", () => {
+  it("should have a shadow", () => {
     render(<NormalIconButton />);
-    expect(screen.getByRole("button")).toHaveClass("shadow-sm");
+    expect(screen.getByRole("button")).toHaveClass("shadow");
   });
   it("forwards the ref", () => {
     const ref = createRef<HTMLButtonElement>();
