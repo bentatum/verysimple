@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.0.1
+
+### Patch Changes
+
+- 28a365b: use standard shadow classname
+
 ## 7.0.0
 
 ### Major Changes
