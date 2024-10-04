@@ -53,8 +53,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             "border my-border": !containerClassname.includes("border-"),
             "w-full": fullWidth,
             [shadowTransitionClassNames(className)]: !disabled,
-            "shadow-sm focus-within:shadow-md hover:shadow-md disabled:shadow-none":
-              !disabled,
+            "shadow focus-within:shadow hover:shadow disabled:shadow-none": !disabled,
           },
           containerClassname
         )}

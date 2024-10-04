@@ -3,7 +3,7 @@
 exports[`OutlinedButtonBase should have an outline 1`] = `
 <div>
   <button
-    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center rounded border shadow-sm hover:shadow-md disabled:shadow-none transition-shadow ease-in duration-100 whitespace-nowrap font-bold text-base min-h-[44px] my-border box-content"
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center rounded border shadow hover:shadow disabled:shadow-none transition-shadow ease-in duration-100 whitespace-nowrap font-bold text-base min-h-[44px] my-border box-content"
     tabindex="0"
   >
     Test
