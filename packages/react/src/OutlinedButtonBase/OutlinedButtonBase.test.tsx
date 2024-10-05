@@ -5,7 +5,7 @@ import OutlinedButtonBase from "./OutlinedButtonBase";
 describe("OutlinedButtonBase", () => {
   it("should have an outline", () => {
     const { container } = render(<OutlinedButtonBase>Test</OutlinedButtonBase>);
-    expect(screen.getByRole("button")).toHaveClass("border", "my-border");
+    expect(screen.getByRole("button")).toHaveClass("border");
     expect(container).toMatchSnapshot();
   });
   it("should have normal disabled styled when destructive", () => {

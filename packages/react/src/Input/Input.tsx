@@ -50,7 +50,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         className={clsx(
           "rounded inline-flex items-center overflow-hidden",
           {
-            "border my-border": !containerClassname.includes("border-"),
+            "border": !containerClassname.includes("border"),
             "w-full": fullWidth,
             [shadowTransitionClassNames(className)]: !disabled,
             "shadow focus-within:shadow hover:shadow disabled:shadow-none": !disabled,

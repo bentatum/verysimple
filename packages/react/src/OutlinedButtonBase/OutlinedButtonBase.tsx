@@ -13,7 +13,7 @@ export interface OutlinedButtonBaseProps extends ButtonBaseProps {
 }
 
 const colorClasses = {
-  neutral: "my-border",
+  neutral: "border",
   primary: "border-primary-500 text-primary-500",
   destructive: "border-red-500 disabled:border-red-400 text-red-500",
 };

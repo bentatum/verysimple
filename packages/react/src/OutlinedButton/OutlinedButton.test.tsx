@@ -5,7 +5,7 @@ import OutlinedButton from "./OutlinedButton";
 describe("OutlinedButton", () => {
   it("should have an outline", () => {
     const { container } = render(<OutlinedButton>Test</OutlinedButton>);
-    expect(screen.getByRole("button")).toHaveClass("border", "my-border")
+    expect(screen.getByRole("button")).toHaveClass("border")
     expect(container).toMatchSnapshot();
   });
 
