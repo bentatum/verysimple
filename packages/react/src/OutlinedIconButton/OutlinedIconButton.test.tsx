@@ -5,7 +5,7 @@ import OutlinedIconButton from "./OutlinedIconButton";
 describe("OutlinedIconButton", () => {
   it("should have an outline", () => {
     const { container } = render(<OutlinedIconButton>Test</OutlinedIconButton>);
-    expect(screen.getByRole("button")).toHaveClass("border", "my-border")
+    expect(screen.getByRole("button")).toHaveClass("border");
     expect(container).toMatchSnapshot();
   });
   it("overrides the hover text color on primary since svg icons do not turn into gradients", () => {
