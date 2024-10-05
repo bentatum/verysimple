@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.0.2
+
+### Patch Changes
+
+- e044196: fix: use standard border class
+
 ## 7.0.1
 
 ### Patch Changes
