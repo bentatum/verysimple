@@ -1,5 +1,11 @@
 # Change Log
 
+## 8.1.0
+
+### Minor Changes
+
+- 1105292: new dialog prop: panel props
+
 ## 8.0.0
 
 ### Major Changes
