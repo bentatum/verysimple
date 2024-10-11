@@ -7,7 +7,6 @@ import {
   buttonShadowClassNames,
   fieldSizeClassNames,
 } from "@/helpers";
-import Ripple from "@/Ripple";
 import { ButtonColor } from "..";
 
 export interface TextButtonProps extends ButtonBaseProps {
@@ -30,26 +29,25 @@ export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
     };
 
     return (
-      <Ripple ref={ref}>
-        <ButtonBase
-          {...props}
-          size={size}
-          color={color}
-          className={clsx(
-            "relative overflow-auto rounded",
-            "transition-colors duration-200 ease-in-out",
-            "hover:bg-opacity-20 active:bg-opacity-20 focus:bg-opacity-20",
-            buttonTextClassNames(className),
-            fieldPaddingClassNames(size, className),
-            buttonShadowClassNames("text", className),
-            fieldSizeClassNames(size, className),
-            !hasColorOverride && colors[color],
-            className
-          )}
-        >
-          {children}
-        </ButtonBase>
-      </Ripple>
+      <ButtonBase
+        {...props}
+        ref={ref}
+        size={size}
+        color={color}
+        className={clsx(
+          "relative overflow-auto rounded",
+          "transition-colors duration-200 ease-in-out",
+          "hover:bg-opacity-20 active:bg-opacity-20 focus:bg-opacity-20",
+          buttonTextClassNames(className),
+          fieldPaddingClassNames(size, className),
+          buttonShadowClassNames("text", className),
+          fieldSizeClassNames(size, className),
+          !hasColorOverride && colors[color],
+          className
+        )}
+      >
+        {children}
+      </ButtonBase>
     );
   }
 );

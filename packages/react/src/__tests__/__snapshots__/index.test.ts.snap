@@ -9,8 +9,6 @@ exports[`top level exports matches snapshot 1`] = `
   "Chip",
   "Dialog",
   "DialogTitle",
-  "DialogContent",
-  "DialogActions",
   "DialogCloseButton",
   "FilledButton",
   "FilledButtonBase",

@@ -1,110 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dialog closing 1`] = `
-<body>
-  <div>
-    <div
-      style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px; display: none;"
-    />
-  </div>
-  <div
-    id="headlessui-portal-root"
-  >
-    <div
-      data-headlessui-portal=""
-    >
-      <button
-        aria-hidden="true"
-        data-headlessui-focus-guard="true"
-        style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
-        type="button"
-      />
-      <div>
-        <div
-          aria-modal="true"
-          class="fixed z-30 inset-0 overflow-y-auto"
-          data-headlessui-state="open"
-          id="headlessui-dialog-:r2:"
-          role="dialog"
-        >
-          <div
-            class="flex items-center justify-center min-h-screen"
-          >
-            <div
-              aria-hidden="true"
-              class="z-10 fixed inset-0 bg-black/40 backdrop-blur"
-              data-headlessui-state="open"
-              id="headlessui-dialog-overlay-:r3:"
-            />
-            <div
-              class="rounded z-20 shadow-2xl relative p-7 m-7 w-full max-w-prose bg-foreground"
-            >
-              <div
-                class="hidden sm:block absolute top-3 right-3 z-10"
-              >
-                <button
-                  aria-label="Close"
-                  class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center rounded min-w-[48px] shadow hover:shadow disabled:shadow-none transition-shadow ease-in duration-100 text-base min-h-[44px] focus:bg-gray-300/20 hover:bg-gray-300/20 active:bg-gray-300/20 dark:focus:bg-gray-750/60 dark:hover:bg-gray-750/60 dark:active:bg-gray-750/60"
-                  tabindex="0"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="h-7 w-7"
-                    data-slot="icon"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      clip-rule="evenodd"
-                      d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
-                      fill-rule="evenodd"
-                    />
-                  </svg>
-                </button>
-              </div>
-              test
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        aria-hidden="true"
-        data-headlessui-focus-guard="true"
-        style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px;"
-        type="button"
-      />
-    </div>
-  </div>
-</body>
-`;
-
-exports[`Dialog closing 2`] = `
-<body>
-  <div>
-    <div
-      style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px; display: none;"
-    />
-  </div>
-  <div
-    id="headlessui-portal-root"
-  >
-    <div
-      data-headlessui-portal=""
-    >
-      <div />
-    </div>
-  </div>
-</body>
-`;
-
 exports[`Dialog default render 1`] = `
 <body>
-  <div>
-    <div
-      style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px; display: none;"
-    />
-  </div>
+  <div
+    aria-hidden="true"
+  />
   <div
     id="headlessui-portal-root"
   >
@@ -120,24 +20,27 @@ exports[`Dialog default render 1`] = `
       <div>
         <div
           aria-modal="true"
-          class="fixed z-30 inset-0 overflow-y-auto"
+          class="relative z-10 focus:outline-none"
           data-headlessui-state="open"
+          data-open=""
           id="headlessui-dialog-:r0:"
           role="dialog"
+          tabindex="-1"
         >
           <div
-            class="flex items-center justify-center min-h-screen"
+            class="fixed inset-0 z-10 w-screen overflow-y-auto bg-background/20 backdrop-blur-sm"
           >
             <div
-              aria-hidden="true"
-              class="z-10 fixed inset-0 bg-black/40 backdrop-blur"
-              data-headlessui-state="open"
-              id="headlessui-dialog-overlay-:r1:"
-            />
-            <div
-              class="rounded z-20 shadow-2xl relative p-7 m-7 w-full max-w-prose bg-foreground"
+              class="flex min-h-full items-center justify-center p-4"
             >
-              test
+              <div
+                class="w-full max-w-md rounded bg-foreground p-6 backdrop-blur-2xl duration-100 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+                data-headlessui-state="open"
+                data-open=""
+                id="headlessui-dialog-panel-:r7:"
+              >
+                test
+              </div>
             </div>
           </div>
         </div>

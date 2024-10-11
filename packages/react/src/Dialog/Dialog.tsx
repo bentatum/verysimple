@@ -1,74 +1,22 @@
-import { FC, forwardRef } from "react";
-import { Dialog as DialogPrimitive } from "@headlessui/react";
-import clsx from "clsx";
-import DialogCloseButton from "./components/DialogCloseButton";
-import type { $ElementProps } from "../types";
-import Card, { CardProps } from "../Card";
+import { Dialog as DialogPrimitive, DialogPanel, DialogProps } from '@headlessui/react'
+import { FC, forwardRef } from 'react'
 
-export type DialogProps = $ElementProps<typeof DialogPrimitive> &
-  CardProps & {
-    overlayProps?: $ElementProps<typeof DialogPrimitive.Overlay>;
-    showCloseButton?: boolean;
-  };
-
-export const Dialog: FC<DialogProps> = forwardRef(
-  (
-    {
-      children,
-      open,
-      overlayProps,
-      onClose,
-      showCloseButton,
-      initialFocus,
-      className = "",
-      disableOverlay,
-      ...props
-    },
-    ref
-  ) => {
-    return (
-      <DialogPrimitive
-        ref={ref}
-        open={open}
-        initialFocus={initialFocus}
-        {...props}
-        onClose={onClose}
-        className="fixed z-30 inset-0 overflow-y-auto"
-      >
-        <div className="flex items-center justify-center min-h-screen">
-          <DialogPrimitive.Overlay
-            {...overlayProps}
-            className={clsx(
-              "z-10 fixed inset-0 bg-black/40 backdrop-blur",
-              overlayProps?.className
-            )}
-          />
-          <Card
-            className={clsx(
-              "z-20 shadow-2xl relative",
-              {
-                "p-7": !className.match(/p-/),
-                "m-7": !className.match(/m-/),
-                "w-full max-w-prose": !className.match(/w-|max-w-/),
-                "bg-foreground": !className.match(/bg-/),
-              },
-              className
-            )}
+export const Dialog = forwardRef<HTMLDivElement, DialogProps>(({ open, children, ...props }, ref) => {
+  return (
+    <DialogPrimitive ref={ref} open={open} as="div" className="relative z-10 focus:outline-none" {...props}>
+      <div className="fixed inset-0 z-10 w-screen overflow-y-auto bg-background/20 backdrop-blur-sm">
+        <div className="flex min-h-full items-center justify-center p-4">
+          <DialogPanel
+            transition
+            className="w-full max-w-md rounded bg-foreground p-6 backdrop-blur-2xl duration-100 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
           >
-            <>
-              {showCloseButton && (
-                <div className="hidden sm:block absolute top-3 right-3 z-10">
-                  <DialogCloseButton onClick={() => onClose(true)} />
-                </div>
-              )}
-              {children}
-            </>
-          </Card>
+            {children}
+          </DialogPanel>
         </div>
-      </DialogPrimitive>
-    );
-  }
-);
+      </div>
+    </DialogPrimitive>
+  )
+})
 
 Dialog.displayName = "Dialog";
 

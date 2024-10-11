@@ -1,37 +1,17 @@
-import { Dialog as UIDialog } from "@headlessui/react";
-import { FC, forwardRef, ReactNode } from "react";
-import clsx from "clsx";
-import type { $ElementProps } from "@/types";
+import { DialogTitle as DialogTitlePrimitive, DialogTitleProps as DialogTitlePrimitiveProps } from "@headlessui/react";
+import { FC, forwardRef } from "react";
 
-export type DialogTitleProps = $ElementProps<typeof UIDialog.Title> & {
-  icon?: ReactNode;
-  loose?: boolean;
-};
+export interface DialogTitleProps extends DialogTitlePrimitiveProps { }
 
 export const DialogTitle: FC<DialogTitleProps> = forwardRef<
   HTMLHeadingElement,
   DialogTitleProps
->(({ icon, className = "", children, loose, ...props }, ref) => {
+>((props, ref) => {
   return (
-    <UIDialog.Title
+    <DialogTitlePrimitive
       {...props}
       ref={ref}
-      className={clsx(
-        "font-display font-bold text-2xl pt-6 px-6",
-        {
-          "flex items-center": Boolean(icon),
-          "whitespace-nowrap": !className.match(/whitespace-/),
-          "mb-8": !loose,
-          "mb-14": loose,
-        },
-        className
-      )}
-    >
-      <>
-        {icon && <div className="mr-3">{icon}</div>}
-        {children}
-      </>
-    </UIDialog.Title>
+    />
   );
 });
 
