@@ -1,5 +1,11 @@
 # Change Log
 
+## 8.0.0
+
+### Major Changes
+
+- 2e74ad9: Upgraded to latest version of headless ui and made some improvements to the dialog component
+
 ## 7.0.2
 
 ### Patch Changes
