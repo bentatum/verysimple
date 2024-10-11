@@ -34,7 +34,7 @@ exports[`Dialog default render 1`] = `
               class="flex min-h-full items-center justify-center p-4"
             >
               <div
-                class="w-full max-w-md rounded bg-foreground p-6 backdrop-blur-2xl duration-100 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+                class="w-full rounded bg-foreground p-6 backdrop-blur-2xl duration-100 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
                 data-headlessui-state="open"
                 data-open=""
                 id="headlessui-dialog-panel-:r7:"
