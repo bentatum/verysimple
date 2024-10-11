@@ -3,8 +3,6 @@
 import {
   Button,
   Dialog,
-  DialogActions,
-  DialogContent,
   DialogTitle,
 } from "@verysimple/react";
 import ComponentPage from "../ComponentPage";
@@ -29,16 +27,16 @@ const InteractiveDemo = () => {
         }}
       >
         <DialogTitle>Dialog Title</DialogTitle>
-        <DialogContent>Dialog Content</DialogContent>
-        <DialogActions>
-          <Button
-            onClick={() => {
-              setDialogOpen(false);
-            }}
-          >
-            Close
-          </Button>
-        </DialogActions>
+
+
+        <Button
+          onClick={() => {
+            setDialogOpen(false);
+          }}
+        >
+          Close
+        </Button>
+
       </Dialog>
     </div>
   );
