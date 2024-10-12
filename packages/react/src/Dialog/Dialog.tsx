@@ -1,10 +1,14 @@
 import { Dialog as DialogPrimitive, DialogPanel, DialogProps as DialogPrimitiveProps, DialogPanelProps } from '@headlessui/react'
 import clsx from 'clsx';
-import { FC, forwardRef } from 'react'
+import { forwardRef } from 'react'
 
 export interface DialogProps extends DialogPrimitiveProps {
   panelProps?: DialogPanelProps;
 }
+
+const shouldRenderClass = (className: string | undefined, regex: string) => {
+  return typeof className === 'string' ? !className.match(new RegExp(`(^|\\s)${regex}`)) : true;
+};
 
 export const Dialog = forwardRef<HTMLDivElement, DialogProps>(({ open, children, panelProps, ...props }, ref) => {
   return (
@@ -13,11 +17,14 @@ export const Dialog = forwardRef<HTMLDivElement, DialogProps>(({ open, children,
         <div className="flex min-h-full items-center justify-center p-4">
           <DialogPanel
             transition
-            className={clsx(
-              "w-full rounded bg-foreground p-6 backdrop-blur-2xl duration-100 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0", {
-              'max-w-md': typeof panelProps?.className === 'string' && !panelProps.className.includes('max-w-'),
-            }, panelProps?.className)}
             {...panelProps}
+            className={clsx(
+              "duration-100 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0", {
+              'p-6': shouldRenderClass(panelProps?.className as string, 'p-'),
+              'bg-foreground': shouldRenderClass(panelProps?.className as string, 'bg-'),
+              'rounded': shouldRenderClass(panelProps?.className as string, 'rounded-'),
+              'w-full max-w-md': shouldRenderClass(panelProps?.className as string, 'max-w-|w-'),
+            }, panelProps?.className)}
           >
             {children}
           </DialogPanel>
