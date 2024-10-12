@@ -54,4 +54,32 @@ describe("Dialog", () => {
     expect(dialogPanel).toHaveClass('max-w-2xl');
     expect(dialogPanel).not.toHaveClass('max-w-md');
   });
+
+  it('can override the default bg-foreground class', () => {
+    // @ts-expect-error - it's a test
+    render(<Dialog open panelProps={{ className: 'bg-primary', 'data-testid': 'panel' }} onClose={() => {}}>test</Dialog>);
+    const dialogPanel = screen.getByTestId("panel");
+    expect(dialogPanel).toHaveClass('bg-primary');
+    expect(dialogPanel).not.toHaveClass('bg-foreground');
+  });
+
+  it('can override the default rounded class', () => {
+    // @ts-expect-error - it's a test
+    render(<Dialog open panelProps={{ className: 'rounded-lg', 'data-testid': 'panel' }} onClose={() => {}}>test</Dialog>);
+    const dialogPanel = screen.getByTestId("panel");
+    expect(dialogPanel).toHaveClass('rounded-lg');
+    expect(dialogPanel).not.toHaveClass('rounded');
+  });
+
+  it('can override multiple default classes', () => {
+    // @ts-expect-error - it's a test
+    render(<Dialog open panelProps={{ className: 'max-w-2xl bg-primary rounded-lg', 'data-testid': 'panel' }} onClose={() => {}}>test</Dialog>);
+    const dialogPanel = screen.getByTestId("panel");
+    expect(dialogPanel).toHaveClass('max-w-2xl');
+    expect(dialogPanel).toHaveClass('bg-primary');
+    expect(dialogPanel).toHaveClass('rounded-lg');
+    expect(dialogPanel).not.toHaveClass('max-w-md');
+    expect(dialogPanel).not.toHaveClass('bg-foreground');
+    expect(dialogPanel).not.toHaveClass('rounded');
+  });
 }); 
