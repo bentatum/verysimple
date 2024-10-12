@@ -1,5 +1,11 @@
 # Change Log
 
+## 8.1.1
+
+### Patch Changes
+
+- 6fae451: fix: dialog panel classname defaults
+
 ## 8.1.0
 
 ### Minor Changes

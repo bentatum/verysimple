@@ -1,6 +1,6 @@
 {
   "name": "@verysimple/react",
-  "version": "8.1.0",
+  "version": "8.1.1",
   "description": "A very simple component library",
   "main": "dist/index.js",
   "files": [
