@@ -1,5 +1,11 @@
 # Change Log
 
+## 8.1.2
+
+### Patch Changes
+
+- f7923a3: fix: improve notification component and reduce form label font weight
+
 ## 8.1.1
 
 ### Patch Changes
