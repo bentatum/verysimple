@@ -30,11 +30,7 @@ exports[`OutlinedButton should have an outline 1`] = `
     class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center rounded border shadow hover:shadow disabled:shadow-none transition-shadow ease-in duration-100 whitespace-nowrap font-bold text-base min-h-[44px] border box-content"
     tabindex="0"
   >
-    <span
-      class="px-4 w-full flex items-center justify-center"
-    >
-      Test
-    </span>
+    Test
   </button>
 </div>
 `;

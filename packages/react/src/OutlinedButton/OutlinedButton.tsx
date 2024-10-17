@@ -33,18 +33,7 @@ export const OutlinedButton = forwardRef<
         disabled={disabled}
         {...props}
       >
-        <span
-          className={clsx(
-            fieldPaddingClassNames(size),
-            "w-full flex items-center justify-center",
-            // {
-            //   "text-transparent bg-clip-text my-bg-gradient-to-r":
-            //     color === "primary" && !disabled,
-            // }
-          )}
-        >
-          {children}
-        </span>
+        {children}
       </OutlinedButtonBase>
     );
   }

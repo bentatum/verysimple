@@ -3,7 +3,7 @@
 exports[`FormLabel should match the snapshot 1`] = `
 <div>
   <label
-    class="block text-sm mb-1.5 font-semibold"
+    class="block text-sm mb-1.5"
   >
     test
   </label>
