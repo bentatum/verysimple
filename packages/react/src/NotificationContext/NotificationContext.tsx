@@ -1,8 +1,9 @@
 import { createContext, FC, ReactNode, useContext, useState, cloneElement, isValidElement } from "react";
-import Notification, { NotificationProps } from "@/Notification";
+import { AnimatePresence } from "framer-motion"; // Import AnimatePresence
 
 interface NotificationContextProps {
   showNotification: (content: ReactNode) => void;
+  closeNotification: () => void;
 }
 
 const NotificationContext = createContext<NotificationContextProps | undefined>(undefined);
@@ -26,10 +27,16 @@ export const NotificationProvider: FC<{ children: ReactNode }> = ({ children }) 
     }
   };
 
+  const closeNotification = () => {
+    setNotification(null);
+  };
+
   return (
-    <NotificationContext.Provider value={{ showNotification }}>
+    <NotificationContext.Provider value={{ showNotification, closeNotification }}>
       {children}
-      {notification}
+      <AnimatePresence>
+        {notification}
+      </AnimatePresence>
     </NotificationContext.Provider>
   );
 };

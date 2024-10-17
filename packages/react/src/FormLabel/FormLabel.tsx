@@ -16,8 +16,7 @@ export const FormLabel: FC<FormLabelProps> = forwardRef(
           "block",
           {
             "text-sm": !className?.includes("text-"),
-            "mb-1.5": !className?.includes("mb-"),
-            "font-semibold": !className?.includes("font-"),
+            "mb-1.5": !className?.includes("mb-")
           },
           className
         )}
