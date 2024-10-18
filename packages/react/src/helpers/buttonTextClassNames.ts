@@ -6,7 +6,7 @@ export const buttonTextClassNames = (
   return clsx(
     {
       "whitespace-nowrap": !className.match(/whitespace-/),
-      "font-bold": !className.match(
+      "font-medium": !className.match(
         /font-[thin|extralight|light|normal|medium|semibold|extrabold|black]/
       ),
     }
