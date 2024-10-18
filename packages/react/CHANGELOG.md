@@ -1,5 +1,11 @@
 # Change Log
 
+## 8.1.3
+
+### Patch Changes
+
+- 62ebde1: fix: outline button broken x padding
+
 ## 8.1.2
 
 ### Patch Changes
