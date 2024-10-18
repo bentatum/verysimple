@@ -1,5 +1,11 @@
 # Change Log
 
+## 8.1.4
+
+### Patch Changes
+
+- 75d6ede: fix: remove width class from outlined button
+
 ## 8.1.3
 
 ### Patch Changes
