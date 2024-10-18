@@ -2,7 +2,7 @@ import { buttonTextClassNames } from "../buttonTextClassNames";
 
 describe("buttonTextClassNames", () => {
   it("doesn't fail if the className is undefined", () => {
-    expect(buttonTextClassNames()).toContain("font-bold");
+    expect(buttonTextClassNames()).toContain("font-medium");
   });
 
   it('should default to "whitespace-nowrap"', () => {
@@ -18,11 +18,11 @@ describe("buttonTextClassNames", () => {
   });
 
   it("should have bold font as a default", () => {
-    expect(buttonTextClassNames("neutral").includes("font-bold")).toBe(true);
+    expect(buttonTextClassNames("neutral").includes("font-medium")).toBe(true);
   });
 
   it("should be able to override font", () => {
-    expect(buttonTextClassNames("font-normal").includes("font-bold")).toBe(
+    expect(buttonTextClassNames("font-normal").includes("font-medium")).toBe(
       false
     );
   });
