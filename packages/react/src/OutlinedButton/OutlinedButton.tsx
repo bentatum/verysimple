@@ -34,7 +34,7 @@ export const OutlinedButton = forwardRef<
         disabled={disabled}
         className={clsx(
           fieldPaddingClassNames(size),
-          "w-full flex items-center justify-center",
+          "flex items-center justify-center",
           className
         )}
         {...props}
