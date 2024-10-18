@@ -27,7 +27,7 @@ exports[`OutlinedButton can render as a custom component when primary and disabl
 exports[`OutlinedButton should have an outline 1`] = `
 <div>
   <button
-    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed inline-flex items-center justify-center rounded border shadow hover:shadow disabled:shadow-none transition-shadow ease-in duration-100 whitespace-nowrap font-bold text-base min-h-[44px] border box-content"
+    class="focus:outline-none cursor-pointer disabled:cursor-not-allowed rounded border shadow hover:shadow disabled:shadow-none transition-shadow ease-in duration-100 whitespace-nowrap font-bold text-base min-h-[44px] border box-border px-4 w-full flex items-center justify-center"
     tabindex="0"
   >
     Test
