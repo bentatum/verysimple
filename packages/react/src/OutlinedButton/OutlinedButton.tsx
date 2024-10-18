@@ -20,6 +20,7 @@ export const OutlinedButton = forwardRef<
       size = "md",
       children,
       as = "button",
+      className,
       ...props
     },
     ref
@@ -31,6 +32,11 @@ export const OutlinedButton = forwardRef<
         size={size}
         color={color}
         disabled={disabled}
+        className={clsx(
+          fieldPaddingClassNames(size),
+          "w-full flex items-center justify-center",
+          className
+        )}
         {...props}
       >
         {children}

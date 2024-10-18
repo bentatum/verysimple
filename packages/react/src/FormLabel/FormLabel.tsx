@@ -15,7 +15,7 @@ export const FormLabel: FC<FormLabelProps> = forwardRef(
         className={clsx(
           "block",
           {
-            "text-sm": !className?.includes("text-"),
+            "text-xs": !className?.includes("text-"),
             "mb-1.5": !className?.includes("mb-")
           },
           className

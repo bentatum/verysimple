@@ -49,7 +49,7 @@ export const OutlinedButtonBase: FC<OutlinedButtonBaseProps> = forwardRef<
           fieldSizeClassNames(size),
           !hasBorderColor && colorClasses[color],
           // this keeps the size consistent with inputs
-          "box-content",
+          "box-border",
           className
         )}
       />
