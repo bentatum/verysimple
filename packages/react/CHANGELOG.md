@@ -1,5 +1,11 @@
 # Change Log
 
+## 8.1.5
+
+### Patch Changes
+
+- d8092c2: fix: reduce button font weight from bold to medium
+
 ## 8.1.4
 
 ### Patch Changes
